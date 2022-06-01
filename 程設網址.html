@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html class="no-js layout_default 	existingSketch 	">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- META TAGS -->
+	<meta name="description" content="">
+	<meta property="fb:admins" content="844361" />
+	<meta property="fb:app_id" content="113458952018100" />
+	<meta property="og:url" content="https://openprocessing.org/sketch/1584694/" />
+	<meta property="og:title" content="20220525 - jialun - OpenProcessing" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="video.other" />
+	<meta property="og:image" content="https://openprocessing.org/sketch/1584694/thumbnail" />
+	<meta property="og:image:secure_url" content="https://openprocessing.org/sketch/1584694/thumbnail" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="400" />
+
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@openprocessing">
+	<meta name="twitter:title" content="20220525 - jialun">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://openprocessing-usercontent.s3.amazonaws.com/thumbnails/visualThumbnail1584694@2x.jpg">
+
+	<!--
+      <PageMap>
+        <DataObject type="thumbnail">
+          <Attribute name="src" value="https://openprocessing-usercontent.s3.amazonaws.com/thumbnails/visualThumbnail1584694.jpg"/>
+          <Attribute name="width" value="100"/>
+          <Attribute name="height" value="100"/>
+        </DataObject>
+      </PageMap>
+	-->
+	<link rel="canonical" href="https://openprocessing.org/sketch/1584694/">
+	<link rel="alternate" type="application/json+oembed" href="https://openprocessing.org/api/oembed/?url=https%3A%2F%2Fopenprocessing.org%2Fsketch%2F1584694%2F%3F&format=json" title="20220525 - OpenProcessing">
+	<link rel="alternate" type="application/xml+oembed" href="https://openprocessing.org/api/oembed/?url=https%3A%2F%2Fopenprocessing.org%2Fsketch%2F1584694%2F%3F&format=xml" title="20220525 - OpenProcessing">
+	<title>
+		20220525 - OpenProcessing</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+
+<!-- generated from https://realfavicongenerator.net  -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logo/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/logo/favicons/manifest.json">
+<link rel="mask-icon" href="/assets/img/logo/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/logo/favicons/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/logo/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css?version=16.8.8">
+<link rel="stylesheet" href="/assets/css/openprocessing.css?version=16.8.8">
+<link rel="stylesheet" href="/assets/css/icons.css?version=16.8.8">
+
+<!--GA-->
+<script>
+	if (window.location.hostname == 'openprocessing.org' || window.location.hostname == 'beta.openprocessing.org') {
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-875534-5', {
+			'cookieDomain': 'none'
+		});
+		ga('require', 'GTM-WX8BJLV'); //google optimize require
+		if (false) {
+			//if dashboard or user page, send specific pageview at the hitGA in user_view.js.
+		} else {
+			ga('send', 'pageview', window.location.pathname + window.location.search);
+		}
+	} else {
+		ga = function() {};
+	}
+</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/assets/js/vendor/node_modules/codemirror/lib/codemirror.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/js/vendor/node_modules/codemirror/theme/neo.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/js/vendor/node_modules/codemirror/addon/lint/lint.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/js/vendor/node_modules/codemirror/addon/fold/foldgutter.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/js/vendor/node_modules/codemirror/addon/dialog/dialog.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/js/vendor/tippy/tippy.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/css/vendor/quill.snow.css?version=16.8.8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+	<link rel="stylesheet" href="/assets/css/sketch/sketch_view.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/css/sketch/sketch_article.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/css/sketch/comment.css?version=16.8.8">
+	<link rel="stylesheet" href="/assets/css/sketch/darkMode.css?version=16.8.8">
+		<!-- preloads -->
+	<!-- <link rel="preload" href="/assets/img/icons/icon_loader.svg" as="image"> -->
+</head>
+
+<body class="loading">
+	<div id="app" v-bind:class="{ [app.currentMode]: true, 'fullscreen': app.showFullscreen, 'recordMode': app.recordMode,'screenshotMode': app.screenshotMode,'showInstructions': app.showInstructions, 'commentsDisabled': !sessionUser.canComment, 'sourceHidden': +sketch.sourceHidden, 'darkMode': app.darkMode }">
+		<div class="navbar navbar-fixed-top " role="navigation" v-cloak>
+			<div class="container-fluid iconsRow">
+				<div id="websiteControls">
+					<div class="OPlogo icon">
+						<a href="/" id="OPlogoLight">
+							<img src="/assets/img/logo/logo_36x30_white@2x.png">
+						</a>
+					</div>
+
+					<div class="sketchInfo noLang" v-if="!sketch.newSketch" v-cloak>
+						<op-user :userid="user.userID" :avatar="user.avatar" :plus="+user.membershipType" width="30" height="30"></op-user>
+						<div class="sketchTitle" v-once>
+							{{sketch.title}}
+						</div>
+						<div class="sketchAuthor">{{$t('general.by')}}
+							<a href="/user/288924">
+								{{user.fullname}}
+							</a>
+															<a href="#" id="followLink">
+									<span class="icon followIcon"></span>
+								</a>
+													</div>
+
+					</div>
+				</div>
+
+				<div id="mainControls" class="" v-cloak>
+					<div class="icon icon_info" data-target="#infoPanel" v-if="!sketch.newSketch"></div>
+					<div class="icon icon_play" data-target="#sketch"></div>
+					<div class="icon icon_code" data-target="#codePanel"></div>
+				</div>
+				<div id="sideWrapper">
+					<div id="sideButtons" :class="{ 'show': (sketch.isDirty || app.saving || sketch.newSketch || app.currentMode == 'editMode')}">
+						<button v-if="sessionUser.isOwner && sketch.visualID > 0" id="forkSketchLink" class="btn btn-link hidden-xs" data-target='#editSketchPanel'>{{$t('general.saveAsFork')}}</button>
+						<button v-else-if="sessionUser.canInteractWith" id="forkSketchButton" class="btn btn-primary hidden-xs" data-target='#editSketchPanel'>{{$t('general.saveAsFork')}}</button>
+						<button id="saveSketchButton" class="btn btn-primary" data-target='#editSketchPanel' v-show="app.currentMode != 'editMode'  && (app.saving || sketch.isDirty)" v-text="$t('general.save')"></button>
+						<button id="submitSketchButton" :class="{ 'btn btn-primary': 1,  'btn-success': app.justSaved, 'loading': app.saving}" v-text="$t('general.submit')"></button>
+						<button id="quickSaveButton" :class="{ 'btn btn-primary': 1, 'btn-success': app.justSaved, 'loading': app.saving}" v-text="$t('general.save')"></button>
+					</div>
+					<div id="infoPanelButtons">
+						<button v-if="sessionUser.isOwner" id="editSketchButton" class="btn btn-primary" data-target="#editSketchPanel">{{$t('general.edit')}}</button>
+					</div>
+										<div id="sideControls" v-if="!sketch.newSketch" v-cloak>
+						<div id="liveCodeStatus">
+							<op-livecodelist :list="app.liveCodeUsers" limit="6"></op-livecodelist>
+							<!-- <span class="title">LIVE</span> -->
+						</div>
+						<div class="metricGroup hidden-xs">
+							<div id="OP_speaker" class="icon" @click="toggleSound()"></div>
+						</div>
+						<div class="metricGroup" v-if="sessionUser.canInteractWith">
+							<div class="icon icon_heart" :class="sketch.hearts.find(u=>u.userID == sessionUser.userID) ? 'selected':''"></div>
+							<div class="icon icon_arrowToHeart" :class="sketch.hearts.find(u=>u.userID == sessionUser.userID) ? 'shoot':''"></div>
+							<div class="metric" data-target="#heartSidePanel" v-cloak>
+								{{sketch.hearts.length}}
+							</div>
+						</div>
+						<div class="metricGroup hidden-xs" v-if="sessionUser.canInteractWith">
+							<div class="icon icon_comment" data-target="#commentSidePanel"></div>
+							<div class="metric" data-target="#commentSidePanel" v-cloak>
+								{{sketch.comments.length}}
+							</div>
+						</div>
+
+						<div class="metricGroup hidden-xs">
+							<div class="icon icon_fork" data-target="#forkSidePanel"></div>
+							<div id="forkCount" class="metric" data-target="#forkSidePanel">
+							</div>
+						</div>
+
+						<div class="metricGroup hidden-xs">
+							<div class="icon icon_share white" data-target="#shareSidePanel"></div>
+							<div class="metric hide" data-target="#shareSidePanel">
+							</div>
+						</div>
+
+					</div>
+									</div>
+
+			</div>
+
+		</div>
+
+		<div id="sketch" :class="{active: app.currentMode == 'playMode', panel: true, hasFrameBorder: sketch.hasFrameBorder}">
+			<div id="OPC" :class="{ 'minimized': app.opcCollapsed }" v-show="app.OPC.length" v-cloak>
+				<span @click="app.opcCollapsed = !app.opcCollapsed" class="icon icon_cogs_small_white"></span>
+				<!-- <span @click="app.opcCollapsed = !app.opcCollapsed" class="icon icon_x_small_white"></span> -->
+				<opc-controls id="OPCControls" class="dark" :controls='app.OPC' @change="OPC_update" @button-pressed="OPC_buttonPressed" @button-released="OPC_buttonReleased" input-class="dark"></opc-controls>
+				<div id="OPCcollapseIcon" class="pointer" @click="app.opcCollapsed = !app.opcCollapsed"></div>
+			</div>
+			<div class="icon icon_minimize" v-show="app.showFullscreen" @click="app.showFullscreen = false" v-cloak></div>
+			<div id="fullscreenWarning" v-if="app.showFullscreen && !app.isEmbedPage" v-cloak>Press escape to exit fullscreen</div>
+			<div id="introPanel" :class="{'active': app.instructionTimer < app.instructionDuration}" v-if="!sketch.newSketch && app.showInstructions" @mouseenter="app.instructionPaused=1" @mouseleave="app.instructionPaused=0" v-cloak>
+				<hr class="white" />
+				<p>{{sketch.instructions}}</p>
+				<p v-if="sketch.parentSketch">
+					<span class="icon icon_fork"></span>
+					<i18n path="sketch.forkInfo">
+						<template v-slot:sketchtitle>
+							<a :href="'/sketch/'+ sketch.parentSketch.visualID">{{sketch.parentSketch.title}}</a>
+						</template>
+						<template v-slot:username>
+							<a :href="'/user/'+sketch.parentUser.userID">{{sketch.parentUser.fullname}}</a>
+						</template>
+					</i18n>
+				</p>
+				<p v-if="sketch.license && sketch.license != 'none'">
+					<a :href="sketch.licenseObject.url" target="_blank">
+						<span class="icon icon_license_white pretext"></span>
+						<span>CC {{sketch.licenseObject.short}}</span>
+					</a>
+				</p>
+				<div id="instructionCounter" :style="{'width': instructionPercent + '%'}"></div>
+			</div>
+			<div id="archiveInfo" class="container">
+				<div class="bg"></div>
+				<div class="row middle">
+					<div class="col-xs-12 text-center">
+						<img src="/assets/img/icons/icon_archive_large.png">
+						<h2>Archived Sketch</h2>
+						<p>This sketch is created with an older version of Processing,
+							<br> and doesn't work on browsers anymore.
+						</p>
+						<p>
+							<a href="#" class="btn btn-primary red" onclick="$('.navbar .icon_code').click();">View Source Code</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<form id="sketchForm" target="sketchIframe" action="//preview.openprocessing.org/sketch/preview" method="POST">
+				<input id="sketchConfig" type="hidden" name="config" value="" />
+			</form>
+		</div>
+		<div id="recordContainer" class="container-fluid" v-if="app.recordMode" v-cloak>
+			<div class="row">
+
+				<op-radio class="col-xs-12 col-sm-3 col-md-2 col-lg-2" label="Quality" :disabled="app.recording? [0,1]:[]" :options="{'Medium':0.5,'High':1}" v-model="app.recordingQuality"></op-radio>
+				<op-radio class="col-xs-12 col-sm-3 col-md-3 col-lg-2" label="Duration" :disabled="app.recording? [0,1,2]:[]" :options="{'5 secs':'5000','10 secs':'10000','15 secs':'15000'}" v-model="app.recordingDuration"></op-radio>
+				<div class="formItem col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+					<div class="labelContainer"><label>{{app.recordingInProgress ? 'Stop Recording (Spacebar)': 'Start Recording (Spacebar)'}}</label></div>
+					<div><span id="recordButton" :class="{'icon icon_recording':1, 'recording': app.recording}" @click="app.recording = !app.recording"></span></div>
+					<!-- <p>(Cmd + Space)</p> -->
+				</div>
+				<div id="recordingRecordProgress" :style="{width: app.recordingRecordProgress/app.recordingDuration*100 + '%'}"></div>
+
+				<!-- <div class="col-xs-2">
+					<div class="formItem">
+						<label>Format</label>
+						<select v-model="app.recordingType">
+							<option v-for="c in app.recordingTypeList" :value="c">
+								{{c.name}}
+							</option>
+						</select>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<div id="screenshotContainer" class="container-fluid" v-if="app.screenshotMode" v-cloak>
+			<div id="screenshotActions" class="row">
+				<div class="col-xs-12 text-center">
+					<div id="takeScreenshotButton" class="icon icon_capture" @click="takeScreenshot"></div>
+					<p>Click capture
+						<br />to take a screenshot
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="infoPanel" v-if="!sketch.newSketch" class="panel inactive">
+			<div class="container">
+				<div class="row">
+					<h1 class="sketchTitle specialType text-right col-xs-12 text-center-xs col-sm-8 col-md-6" name="title" label="title">
+						20220525					</h1>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-2 col-xs-10 col-sm-offset-8 col-sm-4 col-md-offset-6 col-md-6">
+						<img class="separator hidden-xs" src="/assets/img/sketch/titleSeparatorLine@2x.png" />
+						<div class="by landscape row">
+							<div class="tableCell col-xs-offset-3 col-xs-3 col-sm-offset-0 col-sm-3 userThumbCell">
+								<op-user-lg :userid="user.userID" :avatar="user.avatar" :plus="+user.membershipType"></op-user-lg>
+							</div>
+							<div class="tableCell col-xs-6 col-sm-9">
+								<div class="byText">
+									{{$t('general.by')}}
+									<div class="fullname bariol text-left" name="fullname" label="name">
+										<a href="/user/288924">
+											jialun										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="row forkData" v-if="sketch.parentSketch">
+					<div class="col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+						<span class="icon icon_fork"></span>
+						<i18n path="sketch.forkInfo">
+							<template v-slot:sketchtitle>
+								<a :href="'/sketch/'+ sketch.parentSketch.visualID">{{sketch.parentSketch.title}}</a>
+							</template>
+							<template v-slot:username>
+								<a :href="'/user/'+sketch.parentUser.userID">{{sketch.parentUser.fullname}}</a>
+							</template>
+						</i18n>
+					</div>
+				</div>
+				<div class="row descriptionData">
+
+					<div class="description col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6" name="description" label="description">
+											</div>
+					<div class="instructions hideIfEmpty col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6" name="instructions">
+											</div>
+					<ul class="metadata col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+						<hr class="white">
+						<div class="">
+							<li class="col-xs-4 date">
+								May 25th, 2022							</li>
+							<li class="col-xs-4 classrooms hideIfEmpty">
+								<div class="collection" v-for="c in sketch.classes" :key="c.collectionID">
+									<a :href="`/class/${c.collectionID}`">{{c.title}}</a>
+								</div>
+							</li>
+																																										<li class="col-xs-12 tags" v-if="sketch.tags.length > 0" name="tags" label="tags" description="use commas">
+								<tag v-for="tag in sketch.tags" v-bind:key="tag"><a :href="'/browse/?q=' + tag + '&time=anytime&type=tags'">{{tag}}</a></tag>
+							</li>
+
+							<li class="col-xs-12 license" name="license" label="license">
+								<a href="https://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank">
+									CreativeCommons Attribution NonCommercial ShareAlike								</a>
+							</li>
+						</div>
+
+
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="editSketchPanel" class="panel inactive OPLiveForm" :lang="sessionUser.language">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-3 col-lg-offset-1 col-lg-2 text-center">
+						<div id="screenshotContainer" @click="app.screenshotMode = true">
+							<img src="/assets/img/blank.png" class="ratioKeeper" />
+							<div id="screenshot" class="sketchThumb" :style="{ 'background-image': 'url(' + sketch.thumbURL + ')'}"></div>
+							<div id="takeScreenshotIcon" class="icon icon_camera_white"></div>
+							<div id="takeScreenshotWarning" v-show="sketch.thumbURL == null"><a href="javascript:;"><small><b>No Thumbnail</b><br />Click to create</a></small></div>
+						</div>
+						<input name="sketchThumb" v-model="sketch.thumbURL" type="hidden">
+						<input name="codeObjects" type="hidden">
+						<input type="hidden" name="mode" :value="sketch.isPjs">
+						<input type="hidden" name="templateID" :value="sketch.templateID">
+						<input type="hidden" name="visualID" value="1584694" />
+						<input type="hidden" name="saveAsNew" value="false" />
+						<input type="hidden" name="parentID" value="0" />
+						<input type="hidden" name="restoredVersion" value="false" />
+						<input type="hidden" name="engineID" v-model="sketch.engineID" />
+						<input type="hidden" name="submitToClass" value="" />
+						<input type="hidden" name="hasFrameBorder" value="1" />
+						<input type="hidden" name="loopProtect" value="1" />
+						<input type="hidden" name="isTutorial" value="0" />
+						<input type="hidden" name="versions" value="" />
+						<input type="hidden" name="libraries" :value="JSON.stringify(sketchLibrariesToSave)" />
+					</div>
+					<div class="col-xs-12 col-sm-9 col-lg-8">
+
+						<div class="row">
+							<op-input class="white col-xs-12" id="editFormTitle" v-model="sketch.title" input-class="sketchTitle bariol" name="title" :label="$t('sketch.title')" max="60"></op-input>
+						</div>
+						<div class="row">
+							<div class="formItem white col-xs-12 col-sm-8 col-md-9 col-lg-9">
+								<label class="anchoredBottom" for="editFormDescription">{{$t('sketch.description')}}</label>
+								<textarea max="600" oninput="OPHELPERS.autogrow(this)" v-model="sketch.description" id="editFormDescription" class="OPtextarea autogrow" name="description"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="formItem white col-xs-12 col-sm-8 col-md-9 col-lg-9">
+								<div class="labelContainer">
+									<label class="anchoredBottom" for="editFormInstructions" v-html="$t('sketch.howToInteract')"></label>
+									<textarea id="editFormInstructions" max="600" oninput="OPHELPERS.autogrow(this)" v-model="sketch.instructions" class="OPtextarea autogrow" name="instructions"></textarea>
+								</div>
+								<div class="description text-right">{{$t('general.eg',["mouse, keyboard"])}} </div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="formItem white col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="labelContainer">
+									<label class="anchoredBottom" for="editFormTags">{{$t('sketch.tags')}}</label>
+									<input id="editFormTags" v-model="sketch.tagsString" type="text" class="tags field" name="tags" description="use commas" />
+								</div>
+								<div class="description text-right">{{$t('general.eg',["visualization, fractal, mouse"])}}</div>
+
+							</div>
+							<div class="formItem white license col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="labelContainer">
+									<label class="anchoredBottom">{{$t('sketch.license')}}</label>
+									<select v-model="sketch.license" name="license" class="OPselect">
+										<option v-for="(option,key) in LICENSES" v-bind:value="key">
+											{{ option.short }}
+										</option>
+									</select>
+								</div>
+								<div class="description text-right">{{$t('general.learnMoreAbout')}}
+									<a href="https://creativecommons.org/licenses/" target="_blank">Creative Commons</a>
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="row">
+							<div class="formItem white col-xs-12 col-sm-8 col-md-6">
+								<label for="isDraft">{{$t('sketch.draft')}}</label>
+								<input id="isDraft" name="isDraft" class="OPtoggle dark pull-right" type="checkbox" :data-descriptionchecked="$t('sketch.draftDescription')" v-model="sketch.isDraftToSave" :value="sketch.isDraftToSave" />
+								<div class=" description text-right"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="formItem white col-xs-12 col-sm-8 col-md-6">
+								<label for="isTemplate">{{$t('sketch.template')}}</label>
+								<input id="isTemplate" name="isTemplate" class="OPtoggle dark pull-right" type="checkbox" :data-descriptionchecked="$t('sketch.templateDescription')" v-model="sketch.isTemplate" />
+								<div class=" description text-right"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div id="privacySetting" class="formItem white OPradio plusOnly col-xs-12 col-sm-8 col-md-6  ">
+								<label>{{$t('sketch.whoCanSeeSketch')}}</label>
+								<div class="btn-group">
+									<input id="isPrivate0" v-model="sketch.isPrivateToSave" type="radio" name="isPrivate" :disabled="+sessionUser.membershipType == 0" value="0" autocomplete="off">
+									<label v-if="!+sessionUser.isRestricted" for="isPrivate0" class="btn btn-primary">
+										{{$t('sketch.privacy-anyone')}}
+									</label>
+
+									<input id="isPrivate2" v-model="sketch.isPrivateToSave" type="radio" name="isPrivate" :disabled="+sessionUser.membershipType == 0" value="2" autocomplete="off">
+									<label for="isPrivate2" v-if="sessionUser.userType > 0" class="btn btn-primary">
+										{{$t('sketch.privacy-classes')}}
+									</label>
+
+									<input id="isPrivate3" v-model="sketch.isPrivateToSave" type="radio" name="isPrivate" :disabled="+sessionUser.membershipType == 0" value="3" autocomplete="off">
+									<label for="isPrivate3" v-if="sessionUser.userType > 0" class="btn btn-primary"> {{$t('sketch.privacy-teachers')}}
+
+									</label>
+
+									<input id="isPrivate1" v-model="sketch.isPrivateToSave" type="radio" name="isPrivate" :disabled="+sessionUser.membershipType == 0" value="1" autocomplete="off">
+									<label for="isPrivate1" class="btn btn-primary" data-description=""> {{$t('sketch.privacy-me')}}
+
+									</label>
+								</div>
+								<div class="description text-right" v-html="isPrivateDescription"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div id="hiddenSetting" class="formItem white OPradio plusOnly col-xs-12 col-sm-8 col-md-6  ">
+								<label>{{$t('sketch.whoCanSeeCode')}}</label>
+								<div class="btn-group">
+									<input :disabled="[0].indexOf(+sketch.isPrivateToSave)==-1 || sessionUser.membershipType == 0" id="hideSourceCode0" v-model="sketch.hideSourceCodeToSave" type="radio" name="hideSourceCode" value="0" autocomplete="off" />
+									<label v-if="!+sessionUser.isRestricted" for="hideSourceCode0" class="btn btn-primary">
+										{{$t('sketch.privacy-anyone')}}
+									</label>
+									<input :disabled="[0,2].indexOf(+sketch.isPrivateToSave)==-1 || sessionUser.membershipType == 0" id="hideSourceCode2" v-model="sketch.hideSourceCodeToSave" type="radio" name="hideSourceCode" value="2" autocomplete="off" />
+									<label for="hideSourceCode2" v-if="sessionUser.userType > 0" class="btn btn-primary">
+										{{$t('sketch.privacy-classes')}}
+									</label>
+									<input :disabled="[0,2,3].indexOf(+sketch.isPrivateToSave)==-1 || sessionUser.membershipType == 0" id="hideSourceCode3" v-model="sketch.hideSourceCodeToSave" type="radio" name="hideSourceCode" value="3" autocomplete="off" />
+									<label for="hideSourceCode3" v-if="sessionUser.userType > 0" class="btn btn-primary">
+										{{$t('sketch.privacy-teachers')}}
+									</label>
+									<input id="hideSourceCode1" :disabled="sessionUser.membershipType == 0" v-model="sketch.hideSourceCodeToSave" type="radio" name="hideSourceCode" value="1" autocomplete="off" />
+									<label for="hideSourceCode1" class="btn btn-primary">
+										{{$t('sketch.privacy-me')}}
+									</label>
+								</div>
+								<div class="description text-right" v-html="hideSourceCodeDescription"></div>
+							</div>
+
+						</div>
+						<div class="row">
+							<div id="commentOptions" class="formItem white OPradio col-xs-12 col-sm-8 col-md-6 ">
+								<label>{{$t('sketch.whoCanComment')}}</label>
+								<div class="btn-group">
+									<input name="commentMode" v-bind:disabled="[0].indexOf(+sketch.isPrivateToSave)==-1" id="commentMode1" v-model="sketch.commentModeToSave" type="radio" value="1" autocomplete="off">
+									<label v-if="!+sessionUser.isRestricted" for="commentMode1" class="btn btn-primary">{{$t('sketch.privacy-anyone')}}
+									</label>
+									<input name="commentMode" v-bind:disabled="[0,2].indexOf(+sketch.isPrivateToSave)==-1" id="commentMode2" v-model="sketch.commentModeToSave" type="radio" value="2" autocomplete="off">
+									<label for="commentMode2" v-if="sessionUser.userType > 0" class="btn btn-primary">{{$t('sketch.privacy-classes')}}
+									</label>
+									<input name="commentMode" v-bind:disabled="[0,2,3].indexOf(+sketch.isPrivateToSave)==-1" id="commentMode3" v-model="sketch.commentModeToSave" type="radio" value="3" autocomplete="off">
+									<label for="commentMode3" v-if="sessionUser.userType > 0" class="btn btn-primary">{{$t('sketch.privacy-teachers')}}
+									</label>
+									<input name="commentMode" id="commentMode0" v-model="sketch.commentModeToSave" type="radio" value="0" autocomplete="off">
+									<label for="commentMode0" class="btn btn-primary">{{$t('sketch.privacy-me')}}
+									</label>
+								</div>
+								<div class="description text-right"></div>
+							</div>
+
+						</div>
+						<div class="row" v-if="sessionUser.isOwner">
+							<div class="formItem col-xs-12 col-sm-8 col-md-6">
+								<sketch-private_url :label="$t('sketch.privateURL')" :member="sessionUser.membershipType > 0" :disabled="sessionUser.membershipType == 0" :visualid="sketch.visualID" v-model="sketch.privateCode"></sketch-private_url>
+								<div v-if="sessionUser.membershipType > 0  && !sketch.newSketch" class="description text-right">{{$t('sketch.privateURLDescription')}}</div>
+								<div v-if="sessionUser.membershipType > 0  && sketch.newSketch" class="description text-right">
+									{{$t('sketch.privateURL-pleaseSave')}}
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class=" col-xs-12 col-md-12 col-lg-12">
+								<p>
+									<a id="deleteSketchLink" href="#">{{$t('sketch.deleteSketch')}}</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="codePanel" class="panel inactive" :style="{'padding-bottom':app.consoleHeight + 'px'}">
+			<div id="tutorial" v-if="sketch.isTutorial">
+				<ul id="tutorialPages">
+
+				</ul>
+				<div id="tutorialButtons" class="text-center">
+					<div id="deleteTutorial" class="icon icon_x_circle_dark  pull-left hideIfGuest"></div>
+					<span id="tutorialNavigation">
+						<span id="previousTutorial" class="icon icon_arrow_circle_left_dark"></span>
+						<span id="tutorialIndex" name="showTOC"></span>
+						<tippy to="showTOC" trigger="click" interactive="true" placement='top' animation='fade' arrow=true size='large' theme='dark tutorialTOCTippy' @show="updateTutorialTOC">
+							<ul id="tutorialPageSelector">
+								<li v-for="v of app.tutorialTOC" @click="jumpToPage(v.versionID)">
+									{{v.title}}
+								</li>
+							</ul>
+						</tippy>
+						<span id="nextTutorial" class="icon icon_arrow_circle_right_dark"></span>
+					</span>
+					<div id="addTutorial" class="icon icon_plus_circle_dark pull-right hideIfGuest"></div>
+				</div>
+			</div>
+
+			<div class="hiddenCodeContainer" v-if="sketch.sourceHidden">
+				<p>
+					<img src="/assets/img/icons/icon_hiddenCode.png" />
+				</p>
+				<p>As a
+					<a href="/membership/" target="_blank">Plus+ Member</a> feature, this source code is hidden by the
+					owner.
+				</p>
+			</div>
+			<div class="codeContainer noLang" v-if="!sketch.sourceHidden">
+				<div id="codeTabs" class="">
+					<ul>
+						<draggable v-model="sketch.currentVersion.codeObjects" @end="updateCodeTabOrders">
+							<li v-for="co of sketch.currentVersion.codeObjects" :key="co.visualCodeID" :class="{'selected' : co.selected, 'edit':co.edit, 'canDelete': sketch.currentVersion.codeObjects.filter(d=>!d.toDelete).length > 1 }" v-if="!co.toDelete" @dblclick="editCode(co, $event)" ref="tabContainer">
+								<span v-if="!co.edit" :class="{'tabTitle':true, 'edit':co.edit}" @click="selectCode(co)">{{co.title}}</span>
+								<input required ref="titleInput" v-if="co.edit" v-model="co.title" type="text" maxlength="25" @blur="editCode_blur(co, $event)" @keydown.enter="editCode_blur(co, $event)" />
+								<div v-show="co.selected == true && sketch.currentVersion.codeObjects.filter(d=>!d.toDelete).length > 1" @click="removeCode(co)" class="icon icon_x_small_dark tabCloseButton"></div>
+							</li>
+						</draggable>
+					</ul>
+					<div id="addCodeButton" class="icon icon_plus_small" @click="addCode(false, false, true)"></div>
+				</div>
+			</div>
+			<div id="codeOptions" class=" hidden-xs" :lang="sessionUser.language">
+				<div class="icon icon_minimize" v-show="app.showFullscreen" @click="app.showFullscreen = false"></div>
+				<div class="icon icon_settings_small"></div>
+				<!-- Nav tabs -->
+				<ul id="codeOptionsTabs" class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#sketchSettings" aria-controls="sketchSettings" role="tab" data-toggle="tab">{{$t("sketch.sketch")}}</a>
+					</li>
+					<li role="presentation">
+						<a id="filesLink" href="#sketchFiles" aria-controls="sketchFiles" role="tab" data-toggle="tab">{{$t("sketch.files")}}</a>
+					</li>
+					<li role="presentation" id="editorSettingsTab">
+						<a id="editorSettingsLink" href="#editorSettings" aria-controls="editorSettings" role="tab" data-toggle="tab">{{$t("sketch.editor")}}</a>
+					</li>
+					<li role="presentation" id="codeVersionsTab" v-if="!sketch.newSketch && (sessionUser.isOwner || sessionUser.isProfessorOf)" v-cloak>
+						<a id="codeVersionsLink" @click="app.loadVersions = true" href="#codeVersions" aria-controls="codeVersions" role="tab" data-toggle="tab"><span class="icon icon_revert_white"></span></a>
+					</li>
+					<li role="presentation" id="codeReferenceTab" v-show="sketch.isPjs == 2 || sketch.isPjs == 3">
+						<a href="#codeReference" aria-controls="codeReference" role="tab" data-toggle="tab"><span class="icon icon_book_white"></span></a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="sketchSettings">
+						<div class="formItem" id="sketchModeOptions">
+							<ul id="libraryIDDropdown" class="passiveDropdown"></ul>
+							<op-radio :label="$t('sketch.mode')" class="noLang" :options="sketchModeOptions" v-model="sketch.isPjs"></op-radio>
+							<div class="flex-newLine flex-spaceBetween">
+								<small class="grey" v-if="sketch.isPjs == 1">{{$t('sketch.mode-pjs')}} <a href="https://intercom.help/openprocessing/en/articles/3250763-processingjs-deprecation-notice" target="_blank">{{$t('general.learnMore')}}</a></small>
+							</div>
+							<div class="description">Select mode or <a class="pointer" name="sketchTemplateHandle">choose a template <span class=" icon icon_caret_down_small_white posttext"></span></a></div>
+						</div>
+						<div class="" id="templateOptions">
+							<tippy class="hide" to="sketchTemplateHandle" placement="bottom" trigger="click" theme="dark" animation="fade" arrow="true" interactive="true" size="large" @shown="loadTemplates">
+								<div id="templatesContainer">
+									<ul id="customTemplates" v-if="customTemplates.length > 0">
+										<li class="templateLi pointer" v-for="t in customTemplates" :key="t.visualID" @click="selectTemplate(t)">
+											<img class="templateThumbnail" :src="`/sketch/${t.visualID}/thumbnail`" />
+											<div>
+												<b>{{t.title}}</b>
+												<div class="small grey">{{t.description}}</div>
+											</div>
+
+										</li>
+										<hr class="grey" />
+									</ul>
+									<ul id="defaultTemplates">
+										<li class="templateLi pointer" v-for="t in app.templates.filter(t=>!t.custom)" :key="t.visualID" @click="selectTemplate(t)" v-show="t.visualID != null">
+											<img class="templateThumbnail" :src="`/assets/img/sketch/sketchTemplate${t.visualID}@2x.png`" width="60" height="60" />
+											<div>
+												<b>{{t.title}}</b>
+												<div class="small grey">{{t.description}}</div>
+											</div>
+
+										</li>
+									</ul>
+								</div>
+							</tippy>
+						</div>
+						<op-toggle id="tutorialModeOptions" v-show="sessionUser.isOwner" v-model="sketch.isTutorial" :label="$t('sketch.tutorialMode')" :description="$t('sketch.tutorialModeDescription') + ` <a href=' https://openprocessing.org/sketch/672194' target='_blank'>` + $t('general.learnMore') + `</a>`">
+						</op-toggle>
+
+						<op-toggle id="liveCodeOptions" v-if="app.tour || (+sessionUser.userID == +sketch.userID && sessionUser.membershipType > 1)" v-model="app.liveCodeEnabled" :label="$t('sketch.liveCollaboration')" :disabled="liveCodeNotAllowed" :description="liveCodeDescription"></op-toggle>
+
+						<op-toggle v-if='sketch.isPjs == 1 || sketch.isPjs == 2' v-model="sketch.hasFrameBorder" :label="$t('sketch.showcaseSketch')" :description="sketch.hasFrameBorder? $t('sketch.showcaseSketchDescription'): ''"></op-toggle>
+
+						<op-toggle v-model="sketch.loopProtect" :label="$t('sketch.loopProtect')" :description="sketch.loopProtect? $t('sketch.loopProtectDescription'): ''"></op-toggle>
+
+						<div id="libraryHeader" class="formItem row" v-if="+sketch.isPjs == 2">
+							<div class="formTop">
+								<label class="col-xs-10">{{$t('sketch.libraries')}}<a href="javascript:;" @click="app.showAllLibraries = !app.showAllLibraries;" v-text="app.showAllLibraries? (' - ' + $t('general.showLess')): (' - ' + $t('general.showAll'))" v-show="+sketch.isPjs == 2"></a></label>
+								<div class="col-xs-2 text-right">
+									<a id="addCustomLibraryLink" href="javascript:;" @click="addCustomLibrary()" v-show="+sketch.isPjs == 2"><span class="icon icon_plus_circle_white pretext"></span></a>
+								</div>
+							</div>
+						</div>
+						<div id="libraries" lang="en">
+							<ul id="customLibraries" class="libraryList" v-show="+sketch.isPjs == 2">
+								<li v-for="l in app.customLibraries" class="formItem white library custom">
+									<div class="settingLabel" v-show="!l.edit" @click="editLibraryUrl(l)">{{l.url.substr(l.url.lastIndexOf('/') + 1)}}</div>
+									<input :id="'customLibrary' + l.libraryID" :class="{'settingLabel':1, 'loading':l.loading}" @input="sketch.isDirty = true" type="url" :placeholder="$t('sketch.pasteURL')" v-model="l.url" v-show="l.edit" @blur="updateLibraryTitle(l)" @keyup.enter="$event.target.blur()">
+									<input class="OPtoggle dark pull-right" type="checkbox" v-model="l.enabled" @input="sketch.isDirty = true">
+									<div class="description grey" v-html="l.message ? l.message : `Add any .js file you uploaded or from the web. <a href='https://intercom.help/openprocessing/en/articles/1329104-how-can-i-add-a-custom-library' target='_blank'>Learn more</a>`" v-show="l.edit"></div>
+								</li>
+							</ul>
+							<ul id="defaultLibraries" v-show="+sketch.isPjs == 2" :class="{'libraryList noLang':1, 'showAllLibraries': app.showAllLibraries}">
+								<li v-for="l in app.defaultLibraries" v-show="l.value.enabled || (l.key=='p5.sound') ||(l.key=='OP Configurator 3000') || app.showAllLibraries" :category="l.value.category" :class="{'formItem white library default':1, 'showCategory': l.showCategory}">
+									<div class="settingLabel"><a target="_blank" :href="l.value.versions[0].docUrl">{{l.key}}</a>
+										<ul v-if="l.value.enabled" :class="{ settingVersions: true, passiveDropdown: true, active: l.value.showVersions }" @click="l.value.showVersions = !l.value.showVersions">
+											<li v-for="v in l.value.versions" :value="v.libraryID" :class="{'selected': l.value.selectedVersion == v }" @click="selectLibraryVersion(l,v)">v{{v.version}}</li>
+										</ul>
+									</div><input class="OPtoggle dark pull-right" type="checkbox" v-model="l.value.enabled" @input="toggleLibrary(l)">
+									<div class="description" v-if="l.value.enabled && l.value.versions[0].description.length>0" v-html="l.value.versions[0].description.replace('{{sketch.visualID}}', sketch.visualID)"></div>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="sketchFiles">
+						<p v-if="!sessionUser.canUploadFiles">{{$t('sketch.saveToUpload')}}</p>
+						<p v-if="sessionUser.canUploadFiles">
+							Drop files here or <a href="javascript:;" id="uploadFileButton">select</a>
+						</p>
+						<ul>
+							<li v-for="f in sketch.files" :key="f.name" :class="{ file: true, 'inProgress': f.inProgress, 'error': f.error }">
+								<a target="_blank" :href="sketch.fileBase + f.name" :title="f.name">{{f.name}}</a><span class="fileSize">{{Math.round(f.size / 1024 / 1024 * 100) / 100 + ' mb'}}</span>
+								<div v-if="sessionUser.canUploadFiles" class="icon_delete" @click="deleteFile(f)"></div>
+								<div class="errorMessage" v-if="f.errorMessage">{{f.errorMessage}}</div>
+								<div class="progressBar" v-if="f.inProgress" :style="{ width: f.progress + '%' }"></div>
+							</li>
+						</ul>
+						<div v-if="sessionUser.canUploadFiles" id="quotaContainer">
+							<div id="quotaBar"></div>
+															<div id="quotaAvailable" class="col-xs-6"></div>
+								<div id="getQuotaLink" class="col-xs-6 text-right">
+									<a href="/membership/" target="_blank">Get More Space</a>
+								</div>
+													</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="editorSettings">
+						<op-slider :label="$t('sketch.textSize')" min="12" max="36" step="2" v-model="app.editorFontSize" @dblclick.native="app.editorFontSize = 16" input-class="dark"></op-slider>
+						<div id="layoutOptions" class="formItem">
+							<div class="formTop">
+								<label>{{$t('sketch.layout')}}</label>
+								<div class="text-right">
+									<input name="layoutOption" id="layout_default" type="radio" checked />
+									<label for="layout_default" data-src="/assets/img/icons/layout_default@2x.png">
+									</label>
+									<input name="layoutOption" id="layout_split" type="radio" />
+									<label for="layout_split" data-src="/assets/img/icons/layout_split@2x.png">
+									</label>
+									<input name="layoutOption" id="layout_overlay" type="radio" />
+									<label for="layout_overlay" class="hide" data-src="/assets/img/icons/layout_overlay@2x.png">
+									</label>
+								</div>
+							</div>
+							<div class="description">{{$t('sketch.layoutDescription')}}</div>
+						</div>
+						<op-toggle id="darkModeOptions" :label="$t('sketch.darkMode')" v-model="app.darkMode" :description="$t('sketch.darkModeDescription')"></op-toggle>
+						<op-toggle id="consoleOptions" :label="$t('sketch.console')" v-model="app.showConsole" :description="$t('sketch.consoleDescription')"></op-toggle>
+						<op-toggle id="lintOptions" :label="$t('sketch.linting')" v-model="app.lintingEnabled" :disabled="+sketch.isPjs < 2" :description="+sketch.isPjs < 2 ? $t('sketch.lintingDescription-p5js') : $t('sketch.lintingDescription')"></op-toggle>
+
+						<div class="row formItem">
+							<label class="col-xs-12">{{$t('sketch.shortcuts')}}</label>
+							<p>
+							<table id="keyboardShortcuts" class="small show">
+							</table>
+							</p>
+							<p class="small show col-xs-12"><a href="https://codemirror.net/demo/sublime.html" target="_blank">{{$t('sketch.seeMoreShortcuts')}}</a></p>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="codeVersions" v-if="!sketch.newSketch && (sessionUser.isOwner || sessionUser.isProfessorOf)">
+						<div class="description small">
+							<p v-if="sketch.versions.length> 20">{{$t('sketch.versionsSummarized')}}</p>
+						</div>
+						<ul>
+							<version v-for="v of sketch.versions" v-if="app.loadVersions" :version="v" :is-dirty="sketch.isDirty" :key="v.versionID" :can-restore="sessionUser.isOwner"></version>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="codeReference">
+						<input id="referenceFilter" type="text" tabindex="10000" :placeholder="$t('navigation.search')" />
+					</div>
+				</div>
+				<div class="adContainer hideIfMember">
+					<i18n path="sketch.plusPromo">
+						<a :href="/membership/" target="_blank">{{ $t('general.joinPlus') }}</a>
+					</i18n>
+				</div>
+
+			</div>
+			<div id="codeResizeHandle"></div>
+		</div>
+		<div id="commentSidePanel" v-if="sessionUser.canInteractWith" class="sidePanel inactive hidden-xs container">
+			<div id="commentsSummaryWarning">
+			</div>
+			<div class="comments">
+				<!-- comments go here via d3 -->
+			</div>
+			<div v-show="sessionUser.userID > 0 && (+sessionUser.isEmailVerified || +sessionUser.isRestricted)" id="newCommentContainer">
+				<div class="newComment">
+					<div class="textarea empty"></div>
+					<div class="buttonContainer">
+						<button type="button" class="btn btn-primary red ">{{$t('sketch.post')}}</button>
+						<button type="button" class="btn btn-secondary ">{{$t('sketch.cancel')}}</button>
+					</div>
+				</div>
+			</div>
+			<div v-show="sessionUser.userID > 0 && !+sessionUser.isRestricted && !+sessionUser.isEmailVerified" id="verifyToComment">
+				<div class="newComment">
+					<div class="col-xs-12 text-center">
+						<p>Please verify your email to comment</p>
+						<p class="text-center"><a class="btn btn-primary" href="#" @click="sendVerifyEmail">Verify Email</a></p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div v-show="sessionUser.userID == 0" id="joinToComment">
+				<div class="col-xs-12">
+					<a class="btn btn-primary" href="#">Join to Comment</a>
+				</div>
+			</div>
+		</div>
+		<div id="heartSidePanel" class="sidePanel inactive hidden-xs container">
+			<op-userlist v-if="!app.isEmbedPage && app.sidePanel == '#heartSidePanel'" limit="40" :list="sketch.hearts" id="heartsList">
+			</op-userlist>
+
+		</div>
+		<div id="forkSidePanel" class="sidePanel inactive hidden-xs container">
+			<div id="forkListHeader" class="row">
+				<div class="col-xs-4">
+					<div class="sketchThumbContainer">
+						<img :src="`/sketch/${sketch.visualID}/thumbnail`" class="sketchThumb" />
+					</div>
+				</div>
+				<div class="headerText col-xs-8">
+					20220525					<br /> by
+					<span class="userName">
+						jialun					</span>
+				</div>
+
+			</div>
+			<div id="forkListContainer" v-show="app.forksLoaded && sketch.forks && sketch.forks.length > 0" class="row"></div>
+			<div class="row text-center" v-if="!app.forksLoaded">
+				<p class="col-xs-12"><span class="icon icon_loader"></span></p>
+			</div>
+			<div id="noForkMessage" class="row text-center" v-if="app.forksLoaded && sketch.forks && sketch.forks.length == 0">
+				<p class="col-xs-12"> {{$t('sketch.noForksCreatedYet')}}</p>
+			</div>
+			<div id="forkButtonContainer" class="row text-center" v-if="sessionUser.canInteractWith">
+				<button type="button" id="forkThisSketchButton" v-bind:class="{ 'btn-success': app.justSaved,'disabled': app.justSaved, 'loading': app.saving, 'btn btn-primary': 1 }">{{$t('general.fork')}}</button>
+			</div>
+		</div>
+		<div id="shareSidePanel" class="sidePanel inactive hidden-xs container">
+			<div id="shareLinks">
+				<div>
+					<a href="javascript:;" @click="app.showFullscreen = true">
+						<span class="icon icon_maximize_small_white pretext"></span> {{$t('sketch.fullscreen')}}
+					</a>
+				</div>
+				<div>
+					<a href="javascript:;" @click="app.recordMode = true">
+						<span :class="{'icon pretext':1, 'icon_record_small_white': !app.recordingInProgress, 'icon_loader': app.recordingInProgress}"></span> {{$t('sketch.record')}}</a>
+				</div>
+				<div>
+					<a name="shareSketchLink" href="javascript:;">
+						<span class="icon icon_social_white pretext"></span> {{$t('sketch.share')}}
+					</a>
+					<tippy to="shareSketchLink" placement="bottom" trigger="click" theme="grey" animation="fade" arrow="true" interactive="true" size="medium">
+						<p class="text-left">
+							<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//openprocessing.org/sketch/1584694">
+								<span class="icon icon_facebook_white pretext"></span> Facebook
+							</a>
+						</p>
+						<div class="text-left">
+							<a target="_blank" href="https://twitter.com/intent/tweet?text=Here%20is%20an%20awesome%20sketch%3A%0Ahttps%3A//openprocessing.org/sketch/1584694">
+								<span class="icon icon_twitter_white pretext"></span> Twitter
+							</a>
+						</div>
+					</tippy>
+				</div>
+			</div>
+			<div id="recordingPreview" v-if="app.recordingURL || app.recordingInProgress">
+				<video v-if="app.recordingType == 'video'" id="recordingVideo" controls autoplay>
+					<source :src="app.recordingURL" :type="app.recordingType.type">
+					Your browser does not support the video tag.
+				</video>
+				<img v-if="app.recordingType == 'GIF'" id="recordingGIF" :src="app.recordingURL" />
+				<div class="small text-center" v-show="app.recordingInProgress"></div>
+				<div id="recordingRenderProgress" v-show="app.recordingInProgress" :style="{width: app.recordingRenderProgress*100 + '%'}"></div>
+				<div class="text-center relative" v-show="!app.recordingInProgress && app.recordingURL">
+					<a :href="app.recordingURL" download class="btn btn-primary">Save Recording</a>
+					<span class="icon icon_question_white" v-tippy="{'arrow':true, 'animation':'fade', 'allowHTML':true, 'theme':'grey', interactive: true, hideOnClick: false}" content="<p>Recordings use (still experimental) native recording features of browsers. Results may vary, so try different browsers.</p> <p>Recordings are deleted from our servers after two hours.</p>"></span>
+				</div>
+				<hr />
+			</div>
+			<div class="row" id="share_download">
+				<div class="col-xs-4">{{$t('sketch.download')}}</div>
+				<div class="col-xs-8 text-right" v-if="!sketch.sourceHidden">
+											<a href='/signin?prevUrl=/sketch/1584694' rel='nofollow'>{{$t('sketch.signInToDownload')}}</a>
+									</div>
+				<div class="col-xs-8 text-right sourceHiddenDescription" v-if="sketch.sourceHidden">
+					Disabled (source code is hidden)
+
+				</div>
+			</div>
+			<div class="row" id="share_submitToCrayon" v-if="sessionUser.isOwner && +sessionUser.crayonArtist">
+				<div v-if="sketch.crayonID">
+					<div class="col-xs-8">Crayon Codes</div>
+					<div class="col-xs-4 text-right" v-if="!sketch.sourceHidden">
+						<a :href="`/crayon/edit/${sketch.crayonID}`">
+							{{$t('sketch.viewCrayon')}}
+						</a>
+					</div>
+				</div>
+				<div v-else>
+					<div class="col-xs-8">{{$t('sketch.submitToCrayon')}}</div>
+					<div class="col-xs-4 text-right" v-if="!sketch.sourceHidden">
+						<a :href="`/crayon/preview/${sketch.visualID}`">
+							{{$t('general.submit')}}
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="share_addToClass" v-if="sessionUser.classes && sessionUser.classes.length && sessionUser.canInteractWith">
+				<div class="col-xs-6">{{$t('sketch.submitToClass')}}</div>
+				<div class="col-xs-6 text-right">
+					<div class="dropdown">
+						<a id="classesDDLabel" data-target="classesDD" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							{{$t('sketch.select')}}
+							<span class="caret"></span>
+						</a>
+
+						<ul id="classesDD" class="dropdown-menu" aria-labelledby="dLabel">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="share_addToCuration" v-if="sessionUser.curations && sessionUser.curations.length">
+				<div class="col-xs-6">{{$t('sketch.addToCuration')}}</div>
+				<div class="col-xs-6 text-right">
+					<div class="dropdown">
+						<a id="curationsDDLabel" data-target="curationsDD" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							{{$t('sketch.select')}}
+							<span class="caret"></span>
+						</a>
+
+						<ul id="curationsDD" class="dropdown-menu" aria-labelledby="dLabel">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<sketch-private_url id="privateURL" v-if="sessionUser.isOwner" :label="$t('sketch.privateURL')" :member="sessionUser.membershipType > 0" :disabled="sessionUser.membershipType == 0" :visualid="sketch.visualID" v-model="sketch.privateCode"></sketch-private_url>
+				</div>
+			</div>
+
+			<div class="row formItem" id="share_embed">
+				<div class="col-xs-12">{{$t('sketch.embed')}}</div>
+				<op-clipboard class="col-xs-12" :content="embedCode"></op-clipboard>
+									<div id="plusEmbedOptions" class="col-xs-12">
+						<div class="description text-right">
+							<a href="/membership/" target="_blank">get Plus+</a> to access embedding options
+							<a href="#" data-toggle="tooltip" data-placement="bottom" title="Embedding options include removing the intro and navigation bar to embed in fullscreen. You can also embed private sketches.">
+								<span class="icon icon_question_small_white"></span>
+							</a>
+						</div>
+
+					</div>
+							</div>
+							<div class="row" id="share_attribute">
+					<div class="col-xs-12">{{$t('sketch.attribute')}}</div>
+					<op-clipboard class="col-xs-12" :content="attributionText"></op-clipboard>
+				</div>
+						<div class="row" id="share_report">
+				<div class="col-xs-12"><a href="javascript:;" @click="showReportSketchDialog">{{$t('sketch.reportSketch')}}</a></div>
+			</div>
+		</div>
+		<div id="console" class="hidden-xs" v-show="app.currentMode != 'infoMode' && app.currentMode != 'editMode'" :style="{'height': app.consoleHeight + 'px'}">
+			<div class="consoleSizer"></div>
+			<div class="consolePin">
+				<div></div>
+			</div>
+			<button type="button" class="icon icon_close white"></button>
+			<div id="consoleContent"></div>
+		</div>
+	</div>
+
+
+	<!--    <div class="icon icon_fullscreen"></div>-->
+	<div class="modals">
+		<div id="messageModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="messageModal">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body message">
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default dark" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="errorModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errorModal">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title"></h2>
+				<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true"></span>
+				</button>
+			</div>
+			<div class="modal-body message">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default dark" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="ajaxModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ajaxModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title"></h2>
+				<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true"></span>
+				</button>
+			</div>
+			<div class="modal-body message">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default dark" data-dismiss="modal">Cancel</button>
+				<button type="button" data-error-text="Oops." class="btn btn-primary red">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="joinModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="joinModal">
+		<div class="modal_bg" data-dismiss="modal"></div>
+		<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true"></span>
+		</button>
+		<op-join :mode="mode" :callback="callback" :title="title" :description="description" captcha-key="6LcuPboSAAAAAJPyBeriOU1VrhEZfBVA8O_3fhFe"></op-join>
+	</div>
+
+		<div id="codeSnippetModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="codeSnippetLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title" id="codeSnippetLabel">Code Snippet</h2>
+						<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
+					<div class="modal-body">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="flagSketchModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="flagSketchModal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Report Sketch</h4>
+						<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Oh, that naughty sketch! Please let us know what the issue is below.
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-type="spam" class="btn btn-default">This is
+							inappropriate/spam</button>
+						<button type="button" data-type="copyright" class="btn btn-default">This is copyrighted
+							material</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="confirmTemplateModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="confirmTemplateModal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Apply Template</h4>
+						<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Applying this template will reset your sketch and remove all your changes. Are you sure you would like to continue?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Apply Template</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="reportSketchModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="reportSketchModal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title">Report Sketch</h2>
+						<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
+					<form id="reportSketchForm" action="">
+						<div class="modal-body">
+							<p>Please choose the appropriate issue with this sketch. We will review your submission and take any actions necessary per our <a href="/home/comg" target="_blank">Community Guidelines</a>. In addition to reporting, you can also <a href="https://intercom.help/openprocessing/en/articles/5643978-protective-features#h_bc1535e099" target="_blank">block the user</a> to prevent any future interactions.</p>
+							<p></p>
+							<p><label class="pointer"><input required checked type="radio" name="reportOption" value="spam"> Spam, Phishing, or Malicious Content</label></p>
+							<p><label class="pointer"><input required type="radio" name="reportOption" value="inappropriate content"> Inappropriate Content (offensive or abusive language, hate, discrimation, etc.)</label></p>
+							<p><label class="pointer"><input disabled type="radio" name="reportOption" value="spam"> For <strong>copyright infringements</strong>, please <a href="https://forms.gle/jCaZNxYEgVgJhP6eA" target="_blank">fill out this form</a> instead.</label></p>
+							<p></p>
+							<hr class="grey" />
+							Please report sketches only when necessary. Unnecessary or abusive use of this tool may result in your own account being suspended.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+							<button type="submit" class="btn btn-primary">Report Sketch</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="flagCommentModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="flagCommentModal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Report Comment</h4>
+						<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Please confirm that you would like to report the comment below.</p>
+						<p> We will review your submission and take any actions necessary per our <a href="/home/comg" target="_blank">Community Guidelines</a>. In addition to reporting this comment, you can also <a href="https://intercom.help/openprocessing/en/articles/5643978-protective-features#h_bc1535e099" target="_blank">block the user</a> to prevent any future interactions.</p>
+						<p></p>
+						<hr class="grey" />
+						Please report comments only when necessary. Unnecessary or abusive use of this tool may result in your own account being suspended.
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-type="spam" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+						<button type="button" data-loading-text="Reporting…" data-type="spam" class="btn btn-primary" data-dismiss="modal">Report Comment</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="deleteSketchModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteSketchModal">
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title">Are you sure you want to delete your sketch?</h2>
+						<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						All the files uploaded will be deleted as well. No undos.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary" data-loading-text="Deleting…">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="deleteCommentModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteCommentModal">
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title">Delete Comment?</h2>
+						<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						This will also delete all the replies to this comment.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="deleteTabModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteTabModal">
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						Delete this tab? Any code in it will be deleted as well.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary">Delete Tab</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="addToClassModal" class="modal fade loading" tabindex="-1" role="dialog" aria-labelledby="addToClassModal">
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title">Select a collection to submit your sketch</h2>
+						<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<span class="icon icon_loader_dark"></span>
+						<ul>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--    empty and fake div to allow hack sketches work-->
+	<div id="appletAjaxContainer"></div>
+
+	<!--commented to load local
+script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
+	<script>
+		var sketch = {"visualID":"1584694","title":"20220525","isPjs":"2","description":"","instructions":"","tags":[],"license":"by-nc-sa","imports":null,"active":"1","isDraft":"0","isPrivate":"0","hideSourceCode":"0","cdn":"","isOnS3":"2022-05-25 05:13:36","createdOn":"2022-05-25 05:13:36","updatedOn":null,"pinnedOn":null,"filesUpdatedOn":null,"thumbnailUpdatedOn":"2022-05-25 05:13:36","parentID":"0","engineID":"2050","codeObjects":[],"isArticle":"0","isTutorial":"0","isTemplate":"0","hasFrameBorder":true,"loopProtect":"1","commentMode":"1","ipfsHash":null,"libraries":[],"templateID":null,"userID":"288924","newSketch":false,"comments":[],"hearts":[],"numberOfViews":"1","hits":"1","classes":[],"sourceHidden":false,"engineUrl":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.4.1\/lib\/p5.js","versions":[{"visualID":"1584694","versionID":"7331050","createdOn":"2022-05-25 05:13:36","updatedOn":"2022-05-25 05:13:36","isTemp":"0","isArchived":"0","isRestore":"0","codeObjects":[{"visualCodeID":"12338256","visualID":"1584694","orderID":"0","code":"var colors = \"fec5bb-fcd5ce-fae1dd-f8edeb-e8e8e4-d8e2dc-ece4db-ffe5d9-ffd7ba-fec89a\".split(\"-\").map(a=>\"#\"+a)\nclass Ball{\n\tconstructor(args){  \/\/\u9810\u8a2d\u503c\n\t\tthis.r =args.r || random(150)\n\t\tthis.p = args.p || {x:random(width),y:random(height)} \/\/\u4f4d\u7f6e\n\t\tthis.v = {x:random(-1,1),y:random(-1,1)}  \/\/\n\t\tthis.a = args.a ||{x:0,y:0}\n\t\tthis.color = random(colors)\n\t}\t\n\tdraw()\n\t{\n\t\tpush()\n\t\ttranslate(this.p.x,this.p.y)\n\t\tfill(this.color)\n\t\tellipse(0, 0 , this.r);\n\t\tellipse(-this.r\/2,-this.r\/2 , this.r\/2);\n\t\tellipse(this.r\/2,-this.r\/2 , this.r\/2);\n\t\tfill(255)\n\t\t\/\/arc(0,0,this.r\/2,this.r\/2,0,PI)\n\t\tellipse(0,0,this.r\/2);\n\t\tfill(0)\/\/\u9ed1\u8272\u7684\u773c\u73e0\n\t\t\tellipse(-10,-10,this.r\/10);\n\t\tellipse(10,-10,this.r\/10);\n\t\n\t\tfill(0)\/\/\u9ed1\u8272\u7684\u773c\u73e0\n\t\t\n\t\t\n\t\tarc(0,0,this.r\/3,this.r\/3,0,PI)\n\t\n\t\t\n\t\tpop()\n\t}\n\tupdate(){\/\/\u904b\u4f5c\u7684\u52d5\u4f5c\n\t\t\t\tthis.p.x += this.v.x\t\n\t      this.p.y += this.v.y\n\t\t\t this.v.x = this.v.x+ this.a.x\n\t\t\t this.v.y = this.v.y+ this.a.y\n\t\tthis.v.x*=0.9999\n\t\tthis.v.y*=0.9999\n\t\tif(this.p.y>height){\n\t\t\tthis.v.y = -abs(this.v.y)\n\t\t}\n\t}\n}\n\nvar ball\nvar balls = []\nfunction setup() {\n\tcreateCanvas(windowWidth, windowHeight);\n\tbackground(100);\n\tfor(var i=0;i<10;i++){\n\t\tball = new Ball({\n\t\ta:{x:0,y:0.5},\n\t\t\tp:{x:width\/2,y:0}\n\t\t\t\t\/\/\u7522\u751f\u4e00\u500b\u65b0\u7684Ball class\u5143\u4ef6\n\t\t\t\t\t\t\t\t\t\t})\n\t\tballs.push(ball) \n\t}\n}\n\nfunction draw() {\n\tbackground(0);\n\t\/\/ for(var i =0;i<balls.length;i++){\n\t\/\/ \tlet ball = balls[i] \n\tfor(let ball of balls){\n\t\tball.draw()\n\t\tball.update()\n\t}\n}","title":"mySketch","updatedOn":"2022-05-25 05:13:36","versionID":"7331050","createdOn":"2022-05-25 05:13:36","signature":"))>)?)))\u0012-1\u0017\u0003\u0003\u0003\u0017\u0002\u0003\u0017\u0003\u0003\u0017\u0002.#?@\u0011\u0013\u0016A\u001f>-\u0012\u0016A\u001f\u001f\u0012","markers":[],"visualCodeID_original":"12338256"}],"tutorial":false}],"oembedURL":"https:\/\/openprocessing.org\/api\/oembed\/?url=https%3A%2F%2Fopenprocessing.org%2Fsketch%2F1584694%2F%3F","showInstructions":true,"showFullscreen":false,"licenseObject":{"acronym":"by-nc-sa","name":"CreativeCommons Attribution NonCommercial ShareAlike","short":"Attribution NonCommercial ShareAlike","url":"https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0"},"fileBase":"https:\/\/openprocessing-usercontent.s3.amazonaws.com\/files\/user288924\/visual1584694\/hf760df65239cd9cda1e9e5cffbb98a20\/","libraryBase":"https:\/\/openprocessing.org\/","parentUser":false,"parentSketch":false,"files":[]};
+		var user = {"userID":"288924","fullname":"jialun","bio":null,"memberSince":"2021-09-22 02:22:01","memberSince2":null,"featuredOn":null,"isEmailVerified":"0","website":"","location":"","language":"en","active":"1","isRestricted":"0","membershipSeats":null,"fileQuota":null,"topSketchID":null,"membershipType":"0","avatar":null,"bitmarkID":null,"bitmarkID_test":null,"userType":"0","classes":[],"navigationContent":{"sketches":[],"curations":[],"classes":[]},"crayonArtist":null,"isFollowed":null};
+		var defaultTemplate = {"title":"None","codeObjects":[],"mode":"2","visualID":null,"custom":false};
+		var defaultLibraries = [{"libraryID":"1","title":"p5.dom","version":"0.2.11","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsReleases\/p5-release-0.5.2\/addons\/p5.dom.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"2","title":"p5.sound","version":"0.3.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsReleases\/p5-release-0.5.2\/addons\/p5.sound.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":""},{"libraryID":"3","title":"p5.collide2d","version":"0.1","for":"2","description":"This library allows easy collision detection for variety of shapes, which lets you detect when shapes overlap on canvas.<br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565396\" target=\"_blank\">Example<\/a>","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.collide2D@0.1\/p5.collide.js","docUrl":"https:\/\/github.com\/bmoren\/p5.collide2D","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.collide2D\/releases"},{"libraryID":"4","title":"Leap Motion Controller","version":"0.6.4","for":"2","description":"Leap Motion allows you to use your hands as an input.","category":"Hardware","url":"https:\/\/cdn.jsdelivr.net\/npm\/leapjs@0.6.4\/leap-0.6.4.min.js","docUrl":"https:\/\/developer-archive.leapmotion.com\/getting-started\/javascript","releaseUrl":""},{"libraryID":"6","title":"p5.serial","version":"0.0.1","for":"2","description":"A p5.js library that enables communication between your p5 sketch and Arduino (or another serial enabled device).","category":"Hardware","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsLibraries\/p5.serialport-0.0.1\/lib\/p5.serialport.js","docUrl":"https:\/\/github.com\/vanevery\/p5.serialport","releaseUrl":""},{"libraryID":"7","title":"p5.geolocation","version":"0.5","for":"2","description":"p5.geolocation provides techniques for acquiring, watching, calculating, and geofencing user locations for p5.js. <br\/><a href=\"https:\/\/www.openprocessing.org\/sketch\/565406\" target=\"_blank\">Example<\/a>","category":"Miscellaneous","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.geolocation@0.5\/p5.geolocation.js","docUrl":"https:\/\/github.com\/bmoren\/p5.geolocation","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.geolocation\/releases"},{"libraryID":"8","title":"SocketIO","version":"1.4.5","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/medium.com\/@openprocessing\/collaborative-sketches-1643d9751777\" target=\"_blank\">Learn more<\/a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/socket.io\/1.4.5\/socket.io.min.js","docUrl":"http:\/\/socket.io\/","releaseUrl":""},{"libraryID":"9","title":"p5js","version":"0.5.2","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.2\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"10","title":"pjs","version":"1.4.8","for":null,"description":"","category":"Engine","url":"\/assets\/js\/vendor\/processingjsReleases\/processing-1.4.8.js?version=7.42","docUrl":"http:\/\/processingjs.org\/","releaseUrl":""},{"libraryID":"11","title":"p5js","version":"0.5.7","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.7\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"13","title":"p5.dom","version":"0.3.1","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.7\/lib\/addons\/p5.dom.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"14","title":"p5.sound","version":"0.3.2","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.7\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":""},{"libraryID":"15","title":"p5.serial","version":"0.0.21","for":"2","description":"A p5.js library that enables communication between your p5 sketch and Arduino (or another serial enabled device).","category":"Hardware","url":"https:\/\/cdn.jsdelivr.net\/gh\/p5-serial\/p5.serialport@0.0.21\/lib\/p5.serialport.js","docUrl":"https:\/\/github.com\/p5-serial\/p5.serialport","releaseUrl":"https:\/\/api.github.com\/repos\/p5-serial\/p5.serialport\/releases"},{"libraryID":"16","title":"Rita.js","version":"1.1.51","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/gh\/dhowe\/RiTaJS@v1.1.51\/dist\/rita-full.min.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"17","title":"p5.speech","version":"0.0.1","for":"2","description":"A library that provides simple, clear access to the Web Speech and Speech Recognition APIs, allowing for the easy creation of sketches that can talk and listen. <br\/>\nSee <a target=\"blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565366\">Synthesis Example<\/a> and \n<a target=\"blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565564\">Recognition Example<\/a>\n","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/gh\/IDMNYU\/p5.js-speech@1aad7da9f421c10ff6455847ed21ec9a435c2b07\/lib\/p5.speech.js","docUrl":"http:\/\/ability.nyu.edu\/p5.js-speech\/","releaseUrl":"https:\/\/api.github.com\/repos\/IDMNYU\/p5.js-speech\/releases"},{"libraryID":"18","title":"p5.bots","version":"0.3.2","for":"2","description":"p5.bots is a library to facilitate communication between p5.js running in your browser and a microcontroller running Firmata.","category":"Hardware","url":"https:\/\/cdn.jsdelivr.net\/gh\/sarahgp\/p5bots@38402124fefc66013ba5c2930f593d97293086ff\/lib\/p5bots.min.js","docUrl":"https:\/\/github.com\/sarahgp\/p5bots","releaseUrl":""},{"libraryID":"19","title":"SocketIO","version":"1.7.3","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/socket.io\/1.7.3\/socket.io.min.js","docUrl":"http:\/\/socket.io\/","releaseUrl":""},{"libraryID":"20","title":"p5js","version":"0.5.8","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.8\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"21","title":"p5js","version":"0.5.11","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.11\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"22","title":"p5.dom","version":"0.3.3","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.11\/lib\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"23","title":"p5.play","version":"1.1cff5bd","for":"2","description":"p5.play is a p5.js library for the creation of games and playthings. <br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565614\" target=\"_blank\">Animations<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/565623\" target=\"_blank\">Sprites<\/a>","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/molleindustria\/p5.play@1cff5bd1fd45c450284380c19ade395ce1e39a11\/lib\/p5.play.js","docUrl":"http:\/\/p5play.molleindustria.org\/","releaseUrl":""},{"libraryID":"24","title":"p5js","version":"0.5.16","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.16\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"25","title":"p5.dom","version":"0.3.4","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.16\/lib\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"26","title":"p5.sound","version":"0.3.5","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.5.16\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":""},{"libraryID":"27","title":"p5.play","version":"2.7bf47a7","for":"2","description":"p5.play is a p5.js library for the creation of games and playthings.","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/molleindustria\/p5.play@7bf47a7e19c68f1c82192f803f74d60e402827ce\/lib\/p5.play.js","docUrl":"http:\/\/p5play.molleindustria.org\/","releaseUrl":""},{"libraryID":"28","title":"p5js","version":"0.6.0","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.6.0\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"29","title":"p5.dom","version":"0.6.0","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.6.0\/lib\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"30","title":"p5.sound","version":"0.6.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.6.0\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"31","title":"p5.play","version":"3.42cd19","for":"2","description":"p5.play is a p5.js library for the creation of games and playthings.","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/molleindustria\/p5.play@42cd19c39f6f508e4a73c20eaaeb490b97022840\/lib\/p5.play.js","docUrl":"http:\/\/p5play.molleindustria.org\/","releaseUrl":""},{"libraryID":"32","title":"p5.easycam","version":"1.0.9","for":"2","description":"Simple 3D camera control.\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/756182\" target=\"_blank\">Example<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/diwi\/p5.EasyCam@1.0.9\/p5.easycam.min.js","docUrl":"https:\/\/github.com\/freshfork\/p5.EasyCam","releaseUrl":""},{"libraryID":"33","title":"ML5js","version":"0.0.3","for":"2","description":"Friendly machine learning library.\nExamples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565629\" target=\"_blank\">Realtime Object Det.<\/a>","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.0.3\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"34","title":"ML5js","version":"0.0.5","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.0.5\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"35","title":"p5.collide2d","version":"0.5","for":"2","description":"This library allows easy collision detection for variety of shapes, which lets you detect when shapes overlap on canvas.<br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565396\" target=\"_blank\">Example<\/a>","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.collide2D@v0.5\/p5.collide2d.min.js","docUrl":"https:\/\/github.com\/bmoren\/p5.collide2D","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.collide2D\/releases"},{"libraryID":"36","title":"ML5js","version":"0.0.8","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.0.8\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"37","title":"p5.func","version":"0.1","for":"2","description":"p5.func is a p5 extension that provides new objects and utilities for function generation in the time, frequency, and spatial domains.\n<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565621\" target=\"_blank\">Direct Evaluation<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/565626\" target=\"_blank\">Array Filling<\/a>","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/IDMNYU\/p5.js-func@v0.1\/lib\/p5.func.min.js","docUrl":"https:\/\/idmnyu.github.io\/p5.js-func\/","releaseUrl":"https:\/\/api.github.com\/repos\/IDMNYU\/p5.js-func\/releases"},{"libraryID":"38","title":"SimpleJS","version":"1.0","for":"2","description":"Simple.js is a library to make p5js even easier, adding helper functions such as circle, repeat, square.<br\/><a href=\"\/sketch\/572616\" target=\"_blank\">Example<\/a>","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/makeyourownalgorithmicart\/simple.js@v1.0\/simple.js","docUrl":"https:\/\/github.com\/makeyourownalgorithmicart\/simple.js\/wiki","releaseUrl":"https:\/\/api.github.com\/repos\/makeyourownalgorithmicart\/simple.js\/releases"},{"libraryID":"39","title":"SimpleJS","version":"1.1","for":"2","description":"Simple.js is a library to make p5js even easier, adding helper functions such as circle, repeat, square.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/makeyourownalgorithmicart\/simple.js@v1.1\/simple.js","docUrl":"https:\/\/github.com\/makeyourownalgorithmicart\/simple.js\/wiki","releaseUrl":"https:\/\/api.github.com\/repos\/makeyourownalgorithmicart\/simple.js\/releases"},{"libraryID":"40","title":"p5js","version":"0.6.1","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.6.1\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"41","title":"p5.dom","version":"0.6.1","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.6.1\/lib\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"42","title":"p5.sound","version":"0.6.1","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.6.1\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"43","title":"SimpleJS","version":"1.2","for":"2","description":"Simple.js is a library to make p5js even easier, adding helper functions such as circle, repeat, square.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/makeyourownalgorithmicart\/simple.js@1.2\/simple.js","docUrl":"https:\/\/github.com\/makeyourownalgorithmicart\/simple.js\/wiki","releaseUrl":"https:\/\/api.github.com\/repos\/makeyourownalgorithmicart\/simple.js\/releases"},{"libraryID":"44","title":"p5js","version":"0.7.2","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.7.2\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"45","title":"p5.dom","version":"0.7.2","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.7.2\/lib\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"46","title":"p5.sound","version":"0.7.2","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.7.2\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"47","title":"SimpleJS","version":"1.3","for":"2","description":"Simple.js is a library to make p5js even easier, adding helper functions such as circle, repeat, square.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/makeyourownalgorithmicart\/simple.js@1.3\/simple.js","docUrl":"https:\/\/github.com\/makeyourownalgorithmicart\/simple.js\/wiki","releaseUrl":"https:\/\/api.github.com\/repos\/makeyourownalgorithmicart\/simple.js\/releases"},{"libraryID":"48","title":"ML5js","version":"0.1.1","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.1.1\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"49","title":"SimpleJS","version":"1.4","for":"2","description":"Simple.js is a library to make p5js even easier, adding helper functions such as circle, repeat, square.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/makeyourownalgorithmicart\/simple.js@1.4\/simple.js","docUrl":"https:\/\/github.com\/makeyourownalgorithmicart\/simple.js\/wiki","releaseUrl":"https:\/\/api.github.com\/repos\/makeyourownalgorithmicart\/simple.js\/releases"},{"libraryID":"50","title":"dat.GUI","version":"0.6.5","for":"2","description":"A graphical user interface for changing variables with sliders, toggles, etc.","category":"UI Helpers","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/dat-gui\/0.6.5\/dat.gui.min.js","docUrl":"https:\/\/github.com\/dataarts\/dat.gui","releaseUrl":"https:\/\/api.github.com\/repos\/dataarts\/dat.gui\/releases"},{"libraryID":"51","title":"OpenCV","version":"3.4.5","for":"2","description":"A computer vision and machine learning library, that can be used to detect faces, identify objects, classify human actions in videos, track camera movements, track moving objects, extract 3D models of objects, produce 3D point clouds from stereo cameras, stitch images together to produce a high resolution image of an entire scene, find similar images from an image database, remove red eyes from images taken using flash, follow eye movements, and more.","category":"AI & Machine Learning","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsLibraries\/opencv\/opencv-3.4.5.js","docUrl":"https:\/\/opencv.org\/","releaseUrl":""},{"libraryID":"52","title":"OpenCV","version":"4.0.1","for":"2","description":"A computer vision and machine learning library, that can be used to detect faces, identify objects, classify human actions in videos, track camera movements, track moving objects, extract 3D models of objects, produce 3D point clouds from stereo cameras, stitch images together to produce a high resolution image of an entire scene, find similar images from an image database, remove red eyes from images taken using flash, follow eye movements, and more.","category":"AI & Machine Learning","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsLibraries\/opencv\/opencv-4.0.1.js","docUrl":"https:\/\/opencv.org\/","releaseUrl":""},{"libraryID":"53","title":"ML5js","version":"0.1.3","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.1.3\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"54","title":"p5js","version":"0.7.3","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.7.3\/lib\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"55","title":"SimpleJS","version":"1.5","for":"2","description":"Simple.js is a library to make p5js even easier, adding helper functions such as circle, repeat, square.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/makeyourownalgorithmicart\/simple.js@1.5\/simple.js","docUrl":"https:\/\/github.com\/makeyourownalgorithmicart\/simple.js\/wiki","releaseUrl":"https:\/\/api.github.com\/repos\/makeyourownalgorithmicart\/simple.js\/releases"},{"libraryID":"56","title":"p5.plot","version":"0.15c27e2","for":"2","description":"Plotting library for data visualization.","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/IDMNYU\/p5.js-plot\/lib\/p5.plot.js","docUrl":"https:\/\/github.com\/IDMNYU\/p5.js-plot","releaseUrl":""},{"libraryID":"57","title":"SimpleJS","version":"1.6","for":"2","description":"Simple.js is a library to make p5js even easier, adding helper functions such as circle, repeat, square.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/makeyourownalgorithmicart\/simple.js@1.6\/simple.js","docUrl":"https:\/\/github.com\/makeyourownalgorithmicart\/simple.js\/wiki","releaseUrl":"https:\/\/api.github.com\/repos\/makeyourownalgorithmicart\/simple.js\/releases"},{"libraryID":"58","title":"p5.3D","version":"1.0","for":"2","description":"A WebGL library allowing users to create 3D objects easily. <a href=\"\/sketch\/674191\" target=\"_blank\">Tutorial<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/FreddieRa\/p5.3D@1.0\/p5.3D.js","docUrl":"https:\/\/github.com\/FreddieRa\/p5.3D","releaseUrl":"https:\/\/api.github.com\/repos\/FreddieRa\/p5.3D\/releases"},{"libraryID":"59","title":"p5.3D","version":"1.2","for":"2","description":"A WebGL library allowing users to create 3D objects easily. <a href=\"\/sketch\/674191\" target=\"_blank\">Tutorial<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/FreddieRa\/p5.3D@1.2\/p5.3D.js","docUrl":"https:\/\/github.com\/FreddieRa\/p5.3D","releaseUrl":"https:\/\/api.github.com\/repos\/FreddieRa\/p5.3D\/releases"},{"libraryID":"60","title":"p5.3D","version":"1.3","for":"2","description":"A WebGL library allowing users to create 3D objects easily. <a href=\"\/sketch\/674191\" target=\"_blank\">Tutorial<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/FreddieRa\/p5.3D@1.3\/p5.3D.js","docUrl":"https:\/\/github.com\/FreddieRa\/p5.3D","releaseUrl":"https:\/\/api.github.com\/repos\/FreddieRa\/p5.3D\/releases"},{"libraryID":"61","title":"p5.sound","version":"0.7.3","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.7.3\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"62","title":"p5.dom","version":"0.7.3","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.7.3\/lib\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"63","title":"p5js","version":"0.8.0","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.8.0\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"64","title":"p5.dom","version":"0.8.0","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.8.0\/lib\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"65","title":"p5.sound","version":"0.8.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.8.0\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"66","title":"ML5js","version":"0.3.1","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.3.1\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"67","title":"p5.3D","version":"1.4","for":"2","description":"A WebGL library allowing users to create 3D objects easily. <a href=\"\/sketch\/674191\" target=\"_blank\">Tutorial<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/FreddieRa\/p5.3D@1.4\/p5.3D.js","docUrl":"https:\/\/github.com\/FreddieRa\/p5.3D","releaseUrl":"https:\/\/api.github.com\/repos\/FreddieRa\/p5.3D\/releases"},{"libraryID":"68","title":"p5js","version":"0.9.0","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.9.0\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"69","title":"p5.dom","version":"0.9.0","for":"2","description":"(p5.dom is now part of p5js, no need to enable if using v0.10+).<br\/>p5.dom library lets you use video, audio, webcam, input, and text.<br\/>\nExamples: <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565368\">Dom<\/a> - <a target=\"_blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565603\">Video<\/a> ","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.9.0\/lib\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","releaseUrl":""},{"libraryID":"70","title":"p5.sound","version":"0.9.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.9.0\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"71","title":"p5.collide2d","version":"0.6","for":"2","description":"This library allows easy collision detection for variety of shapes, which lets you detect when shapes overlap on canvas.<br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565396\" target=\"_blank\">Example<\/a>","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.collide2D@v0.6\/p5.collide2d.min.js","docUrl":"https:\/\/github.com\/bmoren\/p5.collide2D","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.collide2D\/releases"},{"libraryID":"72","title":"p5.geolocation","version":"0.6","for":"2","description":"p5.geolocation provides techniques for acquiring, watching, calculating, and geofencing user locations for p5.js. <br\/><a href=\"https:\/\/www.openprocessing.org\/sketch\/565406\" target=\"_blank\">Example<\/a>","category":"Miscellaneous","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.geolocation@0.6\/p5.geolocation.js","docUrl":"https:\/\/github.com\/bmoren\/p5.geolocation","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.geolocation\/releases"},{"libraryID":"73","title":"p5.easycam","version":"1.0.7","for":"2","description":"Simple 3D camera control.\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/756182\" target=\"_blank\">Example<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/diwi\/p5.EasyCam@1.07\/p5.easycam.min.js","docUrl":"https:\/\/github.com\/freshfork\/p5.EasyCam","releaseUrl":""},{"libraryID":"74","title":"p5.func","version":"0.2","for":"2","description":"p5.func is a p5 extension that provides new objects and utilities for function generation in the time, frequency, and spatial domains.\n<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565621\" target=\"_blank\">Direct Evaluation<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/565626\" target=\"_blank\">Array Filling<\/a>","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/IDMNYU\/p5.js-func@v0.2\/lib\/p5.func.min.js","docUrl":"https:\/\/idmnyu.github.io\/p5.js-func\/","releaseUrl":"https:\/\/api.github.com\/repos\/IDMNYU\/p5.js-func\/releases"},{"libraryID":"75","title":"SocketIO","version":"2.0.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.0.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"76","title":"SocketIO","version":"2.0.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.0.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"77","title":"SocketIO","version":"2.0.2","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.0.2\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"78","title":"SocketIO","version":"2.0.3","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.0.3\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"79","title":"SocketIO","version":"2.0.4","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.0.4\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"80","title":"SocketIO","version":"2.1.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.1.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"81","title":"SocketIO","version":"2.1.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.1.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"82","title":"SocketIO","version":"2.2.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.2.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"83","title":"Three.js","version":"r108","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r108\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"84","title":"pjs","version":"1.6.6","for":null,"description":"","category":"Engine","url":"\/assets\/js\/vendor\/processingjsReleases\/processing-1.6.6.js?version=7.42","docUrl":"http:\/\/processingjs.org\/","releaseUrl":""},{"libraryID":"85","title":"p5.easycam","version":"1.0.10","for":"2","description":"Simple 3D camera control.\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/756182\" target=\"_blank\">Example<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/freshfork\/p5.EasyCam@1.0.10\/p5.easycam.min.js","docUrl":"https:\/\/github.com\/freshfork\/p5.EasyCam","releaseUrl":"https:\/\/api.github.com\/repos\/freshfork\/p5.EasyCam\/releases"},{"libraryID":"86","title":"Three.js","version":"r109","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r109\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"100","title":"p5js","version":"0.10.2","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.10.2\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"102","title":"ML5js","version":"0.4.0","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@v0.4.0\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"103","title":"p5.serial","version":"0.0.28","for":"2","description":"A p5.js library that enables communication between your p5 sketch and Arduino (or another serial enabled device).","category":"Hardware","url":"https:\/\/cdn.jsdelivr.net\/gh\/p5-serial\/p5.serialport@0.0.28\/lib\/p5.serialport.js","docUrl":"https:\/\/github.com\/p5-serial\/p5.serialport","releaseUrl":"https:\/\/api.github.com\/repos\/p5-serial\/p5.serialport\/releases"},{"libraryID":"104","title":"p5.sound","version":"0.10.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.10.0\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"105","title":"p5.sound","version":"0.10.2","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@0.10.2\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"106","title":"ML5js","version":"v0.4.1","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@v0.4.1\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"108","title":"Quicksettings","version":"3.0.1","for":"2","description":"A quick settings panel you can use to control code parameters","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/bit101\/quicksettings@3.0.3\/quicksettings.min.js","docUrl":"https:\/\/github.com\/bit101\/quicksettings","releaseUrl":"https:\/\/api.github.com\/repos\/bit101\/quicksettings\/releases"},{"libraryID":"110","title":"Quicksettings","version":"3.0.2","for":"2","description":"A quick settings panel you can use to control code parameters","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/bit101\/quicksettings@3.0.3\/quicksettings.min.js","docUrl":"https:\/\/github.com\/bit101\/quicksettings","releaseUrl":"https:\/\/api.github.com\/repos\/bit101\/quicksettings\/releases"},{"libraryID":"111","title":"Quicksettings","version":"3.0.3","for":"2","description":"A quick settings panel you can use to control code parameters","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/bit101\/quicksettings@3.0.3\/quicksettings.min.js","docUrl":"https:\/\/github.com\/bit101\/quicksettings","releaseUrl":"https:\/\/api.github.com\/repos\/bit101\/quicksettings\/releases"},{"libraryID":"114","title":"Three.js","version":"r110","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r110\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"121","title":"ML5js","version":"v0.4.2","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@vv0.4.2\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"122","title":"p5.pathRecorder","version":"0.1","for":"2","description":"Record, save, and recall animation paths.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.pathRecorder@0.1\/p5.pathRecorder.js","docUrl":"https:\/\/github.com\/bmoren\/p5.pathRecorder","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.pathRecorder\/releases"},{"libraryID":"125","title":"ML5js","version":"v0.4.3","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@vv0.4.3\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"141","title":"Three.js","version":"r111","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r111\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"166","title":"p5.pathRecorder","version":"v0.2","for":"2","description":"Record, save, and recall animation paths.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.pathRecorder@v0.2\/p5.pathRecorder.js","docUrl":"https:\/\/github.com\/bmoren\/p5.pathRecorder","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.pathRecorder\/releases"},{"libraryID":"239","title":"Three.js","version":"r112","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r112\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"392","title":"Three.js","version":"r113","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r113\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"510","title":"p5.sound","version":"1.0.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.0.0\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"511","title":"p5js","version":"1.0.0","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.0.0\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"512","title":"Three.js","version":"r114","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r114\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"536","title":"ML5js","version":"v0.5.0","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@vv0.5.0\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"603","title":"Three.js","version":"r115","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r115\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"624","title":"Three.js","version":"r116","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r116\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"760","title":"Three.js","version":"r117","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r117\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"855","title":"p5.collide2d","version":"0.7","for":"2","description":"This library allows easy collision detection for variety of shapes, which lets you detect when shapes overlap on canvas.<br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565396\" target=\"_blank\">Example<\/a>","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.collide2D@v0.7\/p5.collide2d.min.js","docUrl":"https:\/\/github.com\/bmoren\/p5.collide2D","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.collide2D\/releases"},{"libraryID":"862","title":"Three.js","version":"r118","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r118\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"882","title":"p5.collide2d","version":"0.7.1","for":"2","description":"This library allows easy collision detection for variety of shapes, which lets you detect when shapes overlap on canvas.<br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565396\" target=\"_blank\">Example<\/a>","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.collide2D@v0.7.1\/p5.collide2d.min.js","docUrl":"https:\/\/github.com\/bmoren\/p5.collide2D","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.collide2D\/releases"},{"libraryID":"898","title":"p5.collide2d","version":"0.7.3","for":"2","description":"This library allows easy collision detection for variety of shapes, which lets you detect when shapes overlap on canvas.<br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565396\" target=\"_blank\">Example<\/a>","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/bmoren\/p5.collide2D@v0.7.3\/p5.collide2d.min.js","docUrl":"https:\/\/github.com\/bmoren\/p5.collide2D","releaseUrl":"https:\/\/api.github.com\/repos\/bmoren\/p5.collide2D\/releases"},{"libraryID":"982","title":"p5.sound","version":"1.1.3","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.3\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"983","title":"p5.sound","version":"1.1.4","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.4\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"984","title":"p5.sound","version":"1.1.5","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.5\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"985","title":"p5.sound","version":"1.1.7","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.7\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"986","title":"p5.sound","version":"1.1.9","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.9\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"987","title":"p5js","version":"1.1.3","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.3\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"988","title":"p5js","version":"1.1.4","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.4\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"989","title":"p5js","version":"1.1.5","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.5\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"990","title":"p5js","version":"1.1.7","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.7\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"991","title":"p5js","version":"1.1.9","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.1.9\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"1027","title":"Three.js","version":"r119","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r119\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"1163","title":"Three.js","version":"r120","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r120\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"1219","title":"SocketIO","version":"2.3.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@2.3.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1230","title":"Three.js","version":"r121","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r121\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"1301","title":"SocketIO","version":"3.0.0-rc1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.0-rc1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1308","title":"SocketIO","version":"3.0.0-rc2","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.0-rc2\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1400","title":"SocketIO","version":"3.0.0-rc3","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.0-rc3\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1401","title":"Three.js","version":"r122","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r122\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"1426","title":"SocketIO","version":"3.0.0-rc4","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.0-rc4\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1476","title":"ML5js","version":"v0.6.0","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@vv0.6.0\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"1482","title":"SocketIO","version":"3.0.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1501","title":"SocketIO","version":"3.0.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1520","title":"p5.play","version":"4.f51206","for":"2","description":"p5.play is a p5.js library for the creation of games and playthings.","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/molleindustria\/p5.play@f51206f0e5fbb947e770531adb588ef0979c2cbc\/lib\/p5.play.js","docUrl":"http:\/\/p5play.molleindustria.org\/","releaseUrl":""},{"libraryID":"1557","title":"SocketIO","version":"3.0.2","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.2\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1564","title":"SocketIO","version":"3.0.3","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.3\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1601","title":"Three.js","version":"r123","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r123\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"1662","title":"SocketIO","version":"3.0.4","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.4\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1759","title":"p5.sound","version":"1.2.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.2.0\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"1760","title":"p5js","version":"1.2.0","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.2.0\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"1761","title":"Rita.js","version":"v2.0.0-rc.","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/gh\/dhowe\/RiTaJS@vv2.0.0-rc.3\/dist\/rita-full.min.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"1776","title":"Three.js","version":"r124","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r124\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"1791","title":"SocketIO","version":"3.0.5","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.0.5\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1797","title":"p5.easycam","version":"1.2.0","for":"2","description":"Simple 3D camera control.\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/756182\" target=\"_blank\">Example<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/freshfork\/p5.EasyCam@1.2.0\/p5.easycam.min.js","docUrl":"https:\/\/github.com\/freshfork\/p5.EasyCam","releaseUrl":"https:\/\/api.github.com\/repos\/freshfork\/p5.EasyCam\/releases"},{"libraryID":"1800","title":"SocketIO","version":"3.1.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.1.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1813","title":"p5.easycam","version":"1.2.1","for":"2","description":"Simple 3D camera control.\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/756182\" target=\"_blank\">Example<\/a>","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/freshfork\/p5.EasyCam@1.2.1\/p5.easycam.min.js","docUrl":"https:\/\/github.com\/freshfork\/p5.EasyCam","releaseUrl":"https:\/\/api.github.com\/repos\/freshfork\/p5.EasyCam\/releases"},{"libraryID":"1830","title":"Three.js","version":"r125","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r125\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"1887","title":"SocketIO","version":"3.1.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.1.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1993","title":"SocketIO","version":"3.1.2","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@3.1.2\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"1994","title":"Rita.js","version":"2.4.84","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/npm\/rita@2.4.84\/dist\/rita.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"1995","title":"Three.js","version":"126","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r126\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"1996","title":"Rita.js","version":"2.4.85","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/npm\/rita@v2.4.85\/dist\/rita.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"1997","title":"ML5js","version":"0.6.1","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@vv0.6.1\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"1998","title":"p5.sound","version":"1.3.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@v1.3.0\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"1999","title":"p5js","version":"1.3.0","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@v1.3.0\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"2000","title":"SocketIO","version":"4.0.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.0.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2001","title":"Rita.js","version":"2.4.86","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/npm\/rita@v2.4.86\/dist\/rita.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"2002","title":"p5.sound","version":"1.3.1","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@v1.3.1\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"2003","title":"p5js","version":"1.3.1","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@v1.3.1\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"2004","title":"SocketIO","version":"4.0.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.0.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2005","title":"Three.js","version":"127","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r127\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2012","title":"Three.js","version":"128","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r128\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2013","title":"SocketIO","version":"4.0.2","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.0.2\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2014","title":"SocketIO","version":"4.1.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.1.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2015","title":"OP Sidekick","version":"0.0.1","for":"2","description":"Sidekick allows sketches to communicate with OpenProcessing to extend functionality. <a href=\"https:\/\/openprocessing.org\/sketch\/1191441\" target=\"_blank\">Example: Device Motion<\/a> ","category":"Hardware","url":"https:\/\/cdn.jsdelivr.net\/gh\/msawired\/OpenProcessing-Sidekick@latest\/sidekick.js","docUrl":"https:\/\/github.com\/msawired\/OpenProcessing-Sidekick","releaseUrl":"https:\/\/api.github.com\/repos\/msawired\/OpenProcessing-Sidekick\/releases"},{"libraryID":"2016","title":"SocketIO","version":"4.1.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.1.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2017","title":"SocketIO","version":"4.1.2","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.1.2\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2018","title":"Three.js","version":"129","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r129\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2019","title":"Matterjs","version":"0.17.1","for":"2","description":"2D physics engine for the web, allowing gravity, collusion, friction implementations and more.","category":"Physics & Game Mechanics","url":"https:\/\/cdn.jsdelivr.net\/gh\/liabru\/matter-js@0.17.1\/build\/matter.min.js","docUrl":"https:\/\/brm.io\/matter-js\/","releaseUrl":""},{"libraryID":"2020","title":"Handsfreejs","version":"8.4.2","for":"2","description":"Build handsfree User Experiences and add face, hand, and pose tracking to your projects in a snap.\n<a href=\"\/sketch\/1215365\" target=\"_blank\">Example<\/a>","category":"Hardware","url":"https:\/\/cdn.jsdelivr.net\/gh\/midiblocks\/handsfree@8.4.2\/build\/lib\/handsfree.js","docUrl":"https:\/\/handsfree.js.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/midiblocks\/handsfree\/releases"},{"libraryID":"2021","title":"p5.sound","version":"1.4.0","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@v1.4.0\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"2022","title":"p5js","version":"1.4.0","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.4.0\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"2023","title":"Three.js","version":"130","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r130\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2024","title":"Three.js","version":"131","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r131\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2025","title":"OP Configurator 3000","version":"0.0.1","for":"2","description":"A UI helper that allows dynamically setting variables in sketch using sliders, toggles, etc.","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/msawired\/OPC@v0.0.1\/OPC.js","docUrl":"https:\/\/github.com\/msawired\/OPC","releaseUrl":"https:\/\/api.github.com\/repos\/msawired\/OPC\/releases"},{"libraryID":"2026","title":"OP Configurator 3000","version":"0.0.2","for":"2","description":"A UI helper that allows dynamically setting variables in sketch using sliders, toggles, etc.","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/msawired\/OPC@v0.0.2\/opc.js","docUrl":"https:\/\/github.com\/msawired\/OPC","releaseUrl":"https:\/\/api.github.com\/repos\/msawired\/OPC\/releases"},{"libraryID":"2027","title":"Rita.js","version":"2.4.200","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/npm\/rita@2.4.200\/dist\/rita.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"2028","title":"Three.js","version":"132","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r132\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2029","title":"Handsfreejs","version":"8.5.1","for":"2","description":"Build handsfree User Experiences and add face, hand, and pose tracking to your projects in a snap.\n<a href=\"\/sketch\/1215365\" target=\"_blank\">Example<\/a>","category":"Hardware","url":"https:\/\/cdn.jsdelivr.net\/gh\/midiblocks\/handsfree@8.5.1\/build\/lib\/handsfree.js","docUrl":"https:\/\/handsfree.js.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/midiblocks\/handsfree\/releases"},{"libraryID":"2030","title":"SocketIO","version":"4.2.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.2.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2031","title":"Three.js","version":"133","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r133\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2032","title":"Rita.js","version":"2.4.501","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/npm\/rita@v2.4.501\/dist\/rita.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"2033","title":"SocketIO","version":"4.3.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.3.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2034","title":"SocketIO","version":"4.3.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.3.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2035","title":"Three.js","version":"134","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r134\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2036","title":"SocketIO","version":"4.3.2","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.3.2\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2037","title":"p5.pattern","version":"1.0.0","for":"2","description":"Create shapes filled with various patterns (stripes, waves, polka dots, ...) from the library.","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/SYM380\/p5.pattern@latest\/p5.pattern.js","docUrl":"https:\/\/openprocessing.org\/sketch\/1278485","releaseUrl":""},{"libraryID":"2038","title":"SocketIO","version":"4.4.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.4.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2039","title":"Three.js","version":"135","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r135\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2040","title":"OP Configurator 3000","version":"0.0.4","for":"2","description":"A UI helper that allows dynamically setting variables in sketch using sliders, toggles, etc.","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/msawired\/OPC@v0.0.4\/opc.js","docUrl":"https:\/\/github.com\/msawired\/OPC","releaseUrl":"https:\/\/api.github.com\/repos\/msawired\/OPC\/releases"},{"libraryID":"2041","title":"Rita.js","version":"2.6.1","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/npm\/rita@2.6.1\/dist\/rita.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"2042","title":"p5.func","version":"0.3","for":"2","description":"p5.func is a p5 extension that provides new objects and utilities for function generation in the time, frequency, and spatial domains.\n<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565621\" target=\"_blank\">Direct Evaluation<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/565626\" target=\"_blank\">Array Filling<\/a>","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/IDMNYU\/p5.js-func@v0.3\/lib\/p5.func.min.js","docUrl":"https:\/\/idmnyu.github.io\/p5.js-func\/","releaseUrl":"https:\/\/api.github.com\/repos\/IDMNYU\/p5.js-func\/releases"},{"libraryID":"2043","title":"Three.js","version":"136","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r136\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2044","title":"p5.speech","version":"0.0.2","for":"2","description":"A library that provides simple, clear access to the Web Speech and Speech Recognition APIs, allowing for the easy creation of sketches that can talk and listen. <br\/>\nSee <a target=\"blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565366\">Synthesis Example<\/a> and \n<a target=\"blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565564\">Recognition Example<\/a>\n","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/gh\/IDMNYU\/p5.js-speech@1aad7da9f421c10ff6455847ed21ec9a435c2b07\/lib\/p5.speech.js","docUrl":"http:\/\/ability.nyu.edu\/p5.js-speech\/","releaseUrl":"https:\/\/api.github.com\/repos\/IDMNYU\/p5.js-speech\/releases"},{"libraryID":"2045","title":"SocketIO","version":"4.4.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.4.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2046","title":"p5.speech","version":"0.0.3","for":"2","description":"A library that provides simple, clear access to the Web Speech and Speech Recognition APIs, allowing for the easy creation of sketches that can talk and listen. <br\/>\nSee <a target=\"blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565366\">Synthesis Example<\/a> and \n<a target=\"blank\" href=\"https:\/\/www.openprocessing.org\/sketch\/565564\">Recognition Example<\/a>\n","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/gh\/IDMNYU\/p5.js-speech@1aad7da9f421c10ff6455847ed21ec9a435c2b07\/lib\/p5.speech.js","docUrl":"http:\/\/ability.nyu.edu\/p5.js-speech\/","releaseUrl":"https:\/\/api.github.com\/repos\/IDMNYU\/p5.js-speech\/releases"},{"libraryID":"2047","title":"Three.js","version":"137","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r137\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2048","title":"ML5js","version":"0.9.8","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@vv0.9.8\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2049","title":"p5.sound","version":"1.4.1","for":"2","description":"p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565585\" target=\"_blank\">Play<\/a> -  <a href=\"https:\/\/www.openprocessing.org\/sketch\/565638\" target=\"_blank\">Synthesis<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/566618\" target=\"_blank\">Microphone<\/a>","category":"Audio","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@v1.4.1\/lib\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"2050","title":"p5js","version":"1.4.1","for":null,"description":"","category":"Engine","url":"https:\/\/cdn.jsdelivr.net\/npm\/p5@1.4.1\/lib\/p5.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","releaseUrl":"https:\/\/api.github.com\/repos\/processing\/p5.js\/releases"},{"libraryID":"2051","title":"Rita.js","version":"2.8.1","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature. <br\/>\n<a href=\"https:\/\/www.openprocessing.org\/sketch\/565415\" target=\"_blank\">Example<\/a>","category":"Language","url":"https:\/\/cdn.jsdelivr.net\/npm\/rita@2.8.1\/dist\/rita.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","releaseUrl":"https:\/\/api.github.com\/repos\/dhowe\/RiTaJS\/releases"},{"libraryID":"2052","title":"ML5js","version":"0.9.9","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@v0.9.9\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2053","title":"ML5js","version":"0.10.1","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.10.1\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2054","title":"dat.GUI","version":"0.7.8","for":"2","description":"A graphical user interface for changing variables with sliders, toggles, etc.","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/dataarts\/dat.gui@0.7.8\/build\/dat.gui.min.js","docUrl":"https:\/\/github.com\/dataarts\/dat.gui","releaseUrl":"https:\/\/api.github.com\/repos\/dataarts\/dat.gui\/releases"},{"libraryID":"2055","title":"dat.GUI","version":"0.7.9","for":"2","description":"A graphical user interface for changing variables with sliders, toggles, etc.","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/dataarts\/dat.gui@0.7.9\/build\/dat.gui.min.js","docUrl":"https:\/\/github.com\/dataarts\/dat.gui","releaseUrl":"https:\/\/api.github.com\/repos\/dataarts\/dat.gui\/releases"},{"libraryID":"2056","title":"ML5js","version":"0.10.3","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.10.3\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2057","title":"Three.js","version":"138","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r138\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2058","title":"ML5js","version":"0.10.4","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.10.4\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2059","title":"ML5js","version":"0.10.5","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.10.5\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2060","title":"Three.js","version":"139","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r139\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2061","title":"p5.func","version":"0.4","for":"2","description":"p5.func is a p5 extension that provides new objects and utilities for function generation in the time, frequency, and spatial domains.\n<br\/>Examples: <a href=\"https:\/\/www.openprocessing.org\/sketch\/565621\" target=\"_blank\">Direct Evaluation<\/a> - <a href=\"https:\/\/www.openprocessing.org\/sketch\/565626\" target=\"_blank\">Array Filling<\/a>","category":"Code Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/IDMNYU\/p5.js-func@0.4\/lib\/p5.func.min.js","docUrl":"https:\/\/idmnyu.github.io\/p5.js-func\/","releaseUrl":"https:\/\/api.github.com\/repos\/IDMNYU\/p5.js-func\/releases"},{"libraryID":"2062","title":"OP Configurator 3000","version":"0.2.0","for":"2","description":"A UI helper that allows you to set variables live in sketch using sliders, toggles, and more. <a href=\"https:\/\/openprocessing.org\/sketch\/1532131\" target=\"_blank\">Example<\/a>","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/msawired\/OPC@v0.2.0\/opc.js","docUrl":"https:\/\/github.com\/msawired\/OPC","releaseUrl":"https:\/\/api.github.com\/repos\/msawired\/OPC\/releases"},{"libraryID":"2063","title":"ML5js","version":"0.10.6","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.10.6\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2064","title":"ML5js","version":"0.12.0","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.12.0\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2065","title":"OP Configurator 3000","version":"0.2.1","for":"2","description":"A UI helper that allows you to set variables live in sketch using sliders, toggles, and more. <a href=\"https:\/\/openprocessing.org\/sketch\/1532131\" target=\"_blank\">Example<\/a>","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/msawired\/OPC@v0.2.1\/opc.js","docUrl":"https:\/\/github.com\/msawired\/OPC","releaseUrl":"https:\/\/api.github.com\/repos\/msawired\/OPC\/releases"},{"libraryID":"2066","title":"OP Configurator 3000","version":"0.2.2","for":"2","description":"A UI helper that allows you to set variables live in sketch using sliders, toggles, and more. <a href=\"https:\/\/openprocessing.org\/sketch\/1532131\" target=\"_blank\">Example<\/a>","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/msawired\/OPC@v0.2.2\/opc.js","docUrl":"https:\/\/github.com\/msawired\/OPC","releaseUrl":"https:\/\/api.github.com\/repos\/msawired\/OPC\/releases"},{"libraryID":"2067","title":"ML5js","version":"0.12.1","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.12.1\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2068","title":"SocketIO","version":"4.5.0","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.5.0\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2069","title":"ML5js","version":"0.12.2","for":"2","description":"Friendly machine learning library","category":"AI & Machine Learning","url":"https:\/\/cdn.jsdelivr.net\/npm\/ml5@0.12.2\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","releaseUrl":"https:\/\/api.github.com\/repos\/ml5js\/ml5-library\/releases"},{"libraryID":"2070","title":"Three.js","version":"140","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r140\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"},{"libraryID":"2071","title":"OP Configurator 3000","version":"0.2.3","for":"2","description":"A UI helper that allows you to set variables live in sketch using sliders, toggles, and more. <a href=\"https:\/\/openprocessing.org\/sketch\/1532131\" target=\"_blank\">Example<\/a>","category":"UI Helpers","url":"https:\/\/cdn.jsdelivr.net\/gh\/msawired\/OPC@v0.2.3\/opc.js","docUrl":"https:\/\/github.com\/msawired\/OPC","releaseUrl":"https:\/\/api.github.com\/repos\/msawired\/OPC\/releases"},{"libraryID":"2072","title":"SocketIO","version":"4.5.1","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","category":"Server & Backend","url":"https:\/\/cdn.jsdelivr.net\/gh\/socketio\/socket.io-client@4.5.1\/dist\/socket.io.js","docUrl":"http:\/\/socket.io\/","releaseUrl":"https:\/\/api.github.com\/repos\/socketio\/socket.io\/releases"},{"libraryID":"2073","title":"Three.js","version":"141","for":"2","description":"A 3D rendering library using WebGL.","category":"3D","url":"https:\/\/cdn.jsdelivr.net\/gh\/mrdoob\/three.js@r141\/build\/three.min.js","docUrl":"https:\/\/threejs.org\/","releaseUrl":"https:\/\/api.github.com\/repos\/mrdoob\/three.js\/releases"}];
+		var embedPage = false;
+		var PREVIEW_BASE_URL = '//preview.openprocessing.org';
+		var LICENSES = {"none":{"acronym":"","name":"No CreativeCommons License","short":"No CreativeCommons License","url":"#"},"by":{"acronym":"by","name":"CreativeCommons Attribution","short":"Attribution","url":"https:\/\/creativecommons.org\/licenses\/by\/"},"by-sa":{"acronym":"by-sa","name":"CreativeCommons Attribution ShareAlike","short":"Attribution ShareAlike","url":"https:\/\/creativecommons.org\/licenses\/by-sa\/"},"by-nd":{"acronym":"by-nd","name":"CreativeCommons Attribution NoDerivatives","short":"Attribution NoDerivatives","url":"https:\/\/creativecommons.org\/licenses\/by-nd\/"},"by-nc":{"acronym":"by-nc","name":"CreativeCommons Attribution NonCommercial","short":"Attribution NonCommercial","url":"https:\/\/creativecommons.org\/licenses\/by-nc\/"},"by-nc-sa":{"acronym":"by-nc-sa","name":"CreativeCommons Attribution NonCommercial ShareAlike","short":"Attribution NonCommercial ShareAlike","url":"https:\/\/creativecommons.org\/licenses\/by-nc-sa\/"},"by-nc-nd":{"acronym":"by-nc-nd","name":"CreativeCommons Attribution NonCommercial NoDerivatives","short":"Attribution NonCommercial NoDerivatives","url":"https:\/\/creativecommons.org\/licenses\/by-nc-nd\/"}};
+	</script>
+	<script>
+	//setup CSRF
+	const OP_CSRF = {
+		'name': "CSRF",
+		'hash': "292e3b0db3a7cda8893138a044ca6bc0"
+	};
+	
+		var sessionUser = {"userID":"0","fullname":"Guest User","bio":null,"memberSince":null,"memberSince2":null,"featuredOn":null,"isEmailVerified":null,"website":"","location":"","language":"en","active":"1","isRestricted":"0","membershipSeats":null,"fileQuota":null,"topSketchID":null,"membershipType":"0","avatar":null,"bitmarkID":null,"bitmarkID_test":null,"userType":"0","classes":[],"navigationContent":{"sketches":[],"curations":[],"classes":[]},"isProfessorOf":false,"inClassWith":false,"isOwner":false,"canUploadFiles":false,"canInteractWith":true,"curations":[],"canComment":true};
+		if (sessionUser.membershipType == 1 || sessionUser.membershipType == 2 || sessionUser.userType == 2 || typeof sessionUser.forceIntercom != 'undefined') {
+			sessionUser.intercomHash = "ece1281545b6b1fe9ae3cb23f0078a70e244035ce197b5d56a9f96ebd7217801";
+
+		}
+		publishableKey = "pk_G0rby8OF2LKou3XdGx1fBSRYnV2c7";
+	backendMessage = "";
+		const OP_VERSION = "16.8.8";
+	const OP_ENVIRONMENT = "production";
+	const AWS_THUMB_BUCKET = "https://openprocessing-usercontent.s3.amazonaws.com"; //this effects where thumbs are displayed FROM, not where they are uploaded to.	
+</script>
+
+<!-- VUE -->
+<script src="/assets/js/vendor/node_modules/vue/dist/vue.min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/node_modules/vue-tippy/dist/vue-tippy.min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/node_modules/vue-i18n/dist/vue-i18n.min.js"></script>
+<script src="/assets/js/vendor/node_modules/@trevoreyre/autocomplete-vue/dist/autocomplete.min.js?version=16.8.8"></script>
+<script src="/assets/js/op_components.js?version=16.8.8"></script>
+
+<script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
+<!-- <script src="/assets/js/vendor/cookieControl/cookieControl-9.x.min.js?version=16.8.8" type="javascript"></script> -->
+
+<!-- Sentry -->
+	<script src="/assets/js/vendor/node_modules/@sentry/browser/bundles/bundle.min.js?version=16.8.8" crossorigin="anonymous"></script>
+	<script src="/assets/js/vendor/node_modules/@sentry/integrations/build/vue.min.js?version=16.8.8" crossorigin="anonymous"></script>
+	<script src="/assets/js/vendor/node_modules/@sentry/integrations/build/extraerrordata.min.js?version=16.8.8" crossorigin="anonymous"></script>
+
+
+
+<script src="/assets/js/vendor/jquery-1.11.1.min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/modernizr-2.6.2.min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/bootstrap.min.js?version=16.8.8"></script>
+
+<script src="/assets/js/vendor/node_modules/moment/min/moment.min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/node_modules/moment-timezone/builds/moment-timezone-with-data.min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/node_modules/underscore/underscore-min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/jquery.toTextarea.js-master/jquery.toTextarea.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/jquery.unveil.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/node_modules/d3/dist/d3.min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/jquery.form.min.js?version=16.8.8"></script>
+
+<script src="/assets/js/vendor/node_modules/popper.js/dist/umd/popper.min.js?version=16.8.8"></script>
+<script src="/assets/js/vendor/node_modules/tippy.js/umd/index.all.min.js?version=16.8.8"></script>
+
+
+<script src="/assets/js/openprocessing.js?version=16.8.8"></script>
+<script src="/assets/js/lang/lang.js?version=16.8.8"></script>
+<script src="/assets/js/op_helpers.js?PageSpeed=off&PageSpeedFilters=core&version=16.8.8"></script>
+<script src="/assets/js/home/join_modal.js?version=16.8.8"></script>
+<!--GA is moved to head.php-->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.9.0/Sortable.min.js"></script>
+
+	<script src="/assets/js/vendor/mousetrap-master/mousetrap.min.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/lib/codemirror.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/mode/javascript/javascript.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/mode/css/css.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/mode/xml/xml.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/mode/htmlmixed/htmlmixed.js?version=16.8.8"></script>
+
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/fold/brace-fold.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/fold/comment-fold.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/fold/foldcode.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/fold/foldgutter.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/fold/indent-fold.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/comment/comment.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/comment/continuecomment.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/search/searchcursor.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/jshint/dist/jshint.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/lint/lint.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/lint/javascript-lint.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/dialog/dialog.js?version=16.8.8"></script>
+	<script src="/assets/js/sketch/codemirror-addon-search.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/addon/edit/matchbrackets.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/codemirror/keymap/sublime.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/quill/dist/quill.min.js?version=16.8.8"></script>
+	<script src="/assets/js/vendor/node_modules/s3-quill-image-upload/image-upload.min.js?version=16.8.8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/3.5.0/diff.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify-css.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify-html.min.js"></script>
+
+
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+	<link rel="stylesheet" href="/assets/js/op-firepad/firepad.css" />
+	<script src="/assets/js/op-firepad/firepad.js"></script>
+
+	<script src="/assets/js/vendor/dropzone.js?version=16.8.8"></script>
+
+	<!--            <script src="/assets/js/vendor/gif.js-master/dist/gif.worker.js?version=16.8.8"></script>-->
+	<script src="/assets/js/vendor/node_modules/vuedraggable/dist/vuedraggable.umd.min.js?version=16.8.8"></script>
+
+
+	<script src="/assets/js/vendor/loop-protect-v1.0.1.min.js?version=16.8.8"></script>
+	<script src="/assets/js/sketch/sketch_engine.js?version=16.8.8"></script>
+	<script src="/assets/js/sketch/sketch_console.js?version=16.8.8"></script>
+	<!-- <script src="/assets/js/sketch/sketch_jsconsole.js?version=16.8.8"></script> -->
+	<script src="/assets/js/sketch/sketch_versions.js?version=16.8.8"></script>
+	<script src="/assets/js/sketch/sketch_liveCode.js?version=16.8.8"></script>
+	<script src="/assets/js/sketch/sketch_comments.js?version=16.8.8"></script>
+	<script src="/assets/js/sketch/sketch_tutorial.js?version=16.8.8"></script>
+	<script defer src="/assets/js/sketch/sketch_view.js?version=16.8.8"></script>
+	
+
+</body>
+
+</html>
